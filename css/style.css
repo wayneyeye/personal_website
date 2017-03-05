@@ -3,6 +3,9 @@ html{
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+body{
+	background-color: #d6e4e0;
+}
 .site-title{
 	text-align: center;
 }
@@ -21,5 +24,20 @@ html{
 }
 
 #img-hero {
+	width: 100%;
+}
+
+.portfolio-row{
+	text-align: center;
+	height:250px;
+}
+
+.copyright{
+	text-align: center;
+	height:250px;
+	color:grey;	
+}
+
+.copyright-info{
 	width: 100%;
 }
