@@ -7,7 +7,7 @@ body{
 	background-color: #d6e4e0;
 }
 .site-title{
-	text-align: center;
+	text-align: left;
 }
 .site-nav{
 	text-align: center;
@@ -25,6 +25,30 @@ body{
 
 #img-hero {
 	width: 100%;
+}
+
+.side-bar{
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: rgba(255,255,255,.99);
+	color:grey;
+	height: 100%;
+	z-index: 1;
+	width: 35%;
+}
+
+.side-bar-content{
+	margin-top:25px;
+}
+#potrait-img{
+	border-radius: 100%;
+	width:75%;
+	display: block;
+	margin-top:25px;
+	margin-bottom: 25px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .portfolio-row{
