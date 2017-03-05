@@ -1,0 +1,25 @@
+html{
+	  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.site-title{
+	text-align: center;
+}
+.site-nav{
+	text-align: center;
+}
+.hero-banner{
+	width: calc(100% - 30px);
+	position: absolute;
+	bottom: 0;
+	min-height: 50px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	overflow: hidden;
+}
+
+#img-hero {
+	width: 100%;
+}
