@@ -12,8 +12,12 @@ body{
 .site-nav{
 	text-align: center;
 }
+.hero{
+	padding-left: 0;
+	padding-right: 0;
+}
 .hero-banner{
-	width: calc(100% - 30px);
+	width: 100%;
 	position: absolute;
 	bottom: 0;
 	min-height: 50px;
@@ -30,7 +34,7 @@ body{
 .side-bar{
 	position: absolute;
 	top:0;
-	left:-0%;
+	left:-360px;
 	background-color: rgba(255,255,255,.99);
 	color:grey;
 	height: 150%;
@@ -52,9 +56,12 @@ body{
 	margin-right:auto;
 }
 
+.portfolio-title{
+	margin-top: 20px;
+}
+
 .portfolio-row{
 	text-align: center;
-	height:250px;
 }
 .portfolio img{
 	width: 100%;
@@ -66,5 +73,6 @@ body{
 }
 
 .copyright-info{
+	margin-top: 30px;
 	width: 100%;
 }
