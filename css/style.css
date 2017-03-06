@@ -1,16 +1,23 @@
 html{
-	  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+        box-sizing: border-box;
 }
 body{
 	background-color: #d6e4e0;
+	font-family: 'Questrial', sans-serif;
 }
 .site-title{
+    font-family: 'Orbitron', sans-serif;
 	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-shadow: 2px 2px grey;
 }
 .site-nav{
 	text-align: center;
+	text-shadow: 1px 1px grey;
 }
 .hero{
 	padding-left: 0;
@@ -30,7 +37,9 @@ body{
 #img-hero {
 	width: 100%;
 }
-
+.side-bar-title{
+	margin-top: 10px;
+}
 .side-bar{
 	position: fixed;
 	top:0;
