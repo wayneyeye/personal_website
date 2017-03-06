@@ -7,7 +7,7 @@ body{
 	background-color: #d6e4e0;
 }
 .site-title{
-	text-align: left;
+	text-align: center;
 }
 .site-nav{
 	text-align: center;
@@ -32,15 +32,20 @@ body{
 }
 
 .side-bar{
-	position: absolute;
+	position: fixed;
 	top:0;
-	left:-360px;
+	left:-0px;
 	background-color: rgba(255,255,255,.99);
 	color:grey;
-	height: 150%;
+	height: 100vh;
 	overflow: hidden;
 	z-index: 1;
 	width: 360px;
+}
+.side-bar-contact{
+}
+.social{
+	margin:auto;
 }
 
 .side-bar-content{
