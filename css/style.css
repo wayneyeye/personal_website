@@ -53,9 +53,13 @@ body{
 	overflow: hidden;
 	z-index: 1;
 	width: 360px;
+	opacity:1;
+	transition-property: left, opacity;
+    transition-duration: 0.3s, 1s;
 }
 .hide{
-	left:-400px;
+	opacity:0.3;
+	left:-400px;	
 }
 .HideButtn{
 	position: absolute;
