@@ -1,3 +1,13 @@
+describe("Side-Bar", function() {
+  beforeEach(function() {});
+  it("should be able to display", function() {
+    
+  });
+  it("should be able to hide", function() {
+    
+  });
+});
+
 describe("Player", function() {
   var player;
   var song;
