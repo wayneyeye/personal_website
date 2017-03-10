@@ -44,13 +44,20 @@ body{
 .side-bar{
 	position: fixed;
 	top:0;
-	left:-400px;
+	left:0px;
 	background-color: rgba(255,255,255,.99);
 	color:grey;
 	height: 100vh;
 	overflow: hidden;
 	z-index: 1;
 	width: 360px;
+}
+.hide{
+	left:-400px;
+}
+.HideButtn{
+	position: absolute;
+	right:5px;
 }
 .side-bar-contact{
 }
