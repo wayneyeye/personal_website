@@ -74,6 +74,10 @@ body{
 .social{
 	margin:auto;
 }
+.social img{
+	border-radius: 30%;
+	width: 60px;
+}
 
 .side-bar-content{
 	margin-top:25px;

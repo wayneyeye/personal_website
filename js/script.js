@@ -11,19 +11,27 @@ $(function(){
 		}
 	});
 //Sidebar contents
+	var sideBarHeader ='<div class="row side-bar-title"><div class="col-xs-9"><h4>About Me</h4></div></div><div class="row side-bar-potrait"><div class="col-md-12"><img src="img/Wenhe.jpg" id="potrait-img"/></div></div>';
+	var sideBarContent ='<div class="row side-bar-content"><div class="col-md-12"><p>Hi, My name is <strong>Wenhe Ye</strong>...</p><p>My current location is <strong>Dallas, TX</strong></p></div></div><div class="row side-bar-subtitle"><div class="col-md-12"><h5>Interests</h5></div></div><div class="row side-bar-sublist"><div class="col-md-12"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div></div>';
 	var socialIcons = [{
-		img: 'img/icons/email.png',
+		img: "img/icons/email.png",
 		url: ''
 	},{
-		img: 'img/icons/linkedin.png',
+		img: "img/icons/linkedin.png",
 		url: ''
 	},{
-		img: 'img/icons/home.png',
+		img: "img/icons/home.png",
 		url: ''
 	},{
-		img: 'img/icons/github.png',
+		img: "img/icons/github.png",
 		url: ''
 	},];
+	//import social icons
+	var sideBarSocial ='<div class="row side-bar-contact">';
+	socialIcons.forEach(function(soc){
+		sideBarSocial=sideBarSocial+'<div class="col-xs-3 social"><img src="'+soc.img+'"></div>';
+	})
+	sideBarSocial=sideBarSocial+'</div>';
 
 	var SideBarView = Backbone.View.extend({
 		tagName: 'div',
@@ -35,7 +43,7 @@ $(function(){
 		},
 		render: function(){
 			// Create the HTML
-			sidebarHTML='<div class="row side-bar-title"><div class="col-xs-9"><h4>About Me</h4></div></div><div class="row side-bar-potrait"><div class="col-md-12"><img src="img/Wenhe.jpg" id="potrait-img"/></div></div><div class="row side-bar-contact"><div class="col-xs-3 social"><img src="http://placehold.it/50x50"></div><div class="col-xs-3 social"><img src="http://placehold.it/50x50"></div><div class="col-xs-3 social"><img src="http://placehold.it/50x50"></div><div class="col-xs-3 social"><img src="http://placehold.it/50x50"></div></div><div class="row side-bar-content"><div class="col-md-12"><p>Hi, My name is <strong>Wenhe Ye</strong>...</p><p>My current location is <strong>Dallas, TX</strong></p></div></div><div class="row side-bar-subtitle"><div class="col-md-12"><h5>Interests</h5></div></div><div class="row side-bar-sublist"><div class="col-md-12"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div></div>';
+			sidebarHTML=sideBarHeader+sideBarSocial+sideBarContent;
 			var ihideSwitch= new HideButtn({model: iSwitch});
 			this.$el.html(sidebarHTML);
 			this.div= $('.side-bar-title');
@@ -66,7 +74,6 @@ $(function(){
 		},
 		toggleSideBar: function(){
 			this.model.toggle();
-			console.log('click!');
 		}
 	});
 //Hide Buttn
@@ -84,7 +91,6 @@ $(function(){
 		},
 		toggleSideBar: function(){
 			this.model.toggle();
-			console.log('click!');
 		}
 	});
 
@@ -92,5 +98,4 @@ $(function(){
 	var iSwitch= new sidebarOnOff();
 	var iSidebarView=new SideBarView({model: iSwitch});
 	var iAboutMe = new aboutMeView({model: iSwitch});
-	var iHideButtn =new HideButtn({model: iSwitch});
 });
