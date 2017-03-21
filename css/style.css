@@ -70,13 +70,22 @@ body{
 	width: 30px;
 }
 .side-bar-contact{
+	padding-left: 70px;
+	padding-right: 70px;
+	background-color: #e4e2e2;
+	height: 60px;
 }
 .social{
 	margin:auto;
 }
 .social img{
-	border-radius: 30%;
-	width: 60px;
+	width: 48px;
+}
+
+.social :hover{
+	background-color: #e4e2e2;
+	box-shadow: 3px 3px grey;
+	cursor: pointer;
 }
 
 .side-bar-content{
