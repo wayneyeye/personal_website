@@ -66,6 +66,9 @@ body{
 	opacity: 30%;
 	right:5px;
 }
+.HideButtn:hover {
+	cursor: pointer;
+}
 .HideButtn img{
 	width: 30px;
 }
@@ -84,7 +87,7 @@ body{
 
 .social :hover{
 	background-color: #e4e2e2;
-	box-shadow: 3px 3px grey;
+	box-shadow: 0px 3px grey;
 	cursor: pointer;
 }
 

@@ -15,21 +15,21 @@ $(function(){
 	var sideBarContent ='<div class="row side-bar-content"><div class="col-md-12"><p>Hi, My name is <strong>Wenhe Ye</strong>...</p><p>My current location is <strong>Dallas, TX</strong></p></div></div><div class="row side-bar-subtitle"><div class="col-md-12"><h5>Interests</h5></div></div><div class="row side-bar-sublist"><div class="col-md-12"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div></div>';
 	var socialIcons = [{
 		img: "img/icons/email.png",
-		url: ''
+		url: 'mailto:yewenhe0904@gmail.com?subject=Mail to Wenhe'
 	},{
 		img: "img/icons/linkedin.png",
-		url: ''
+		url: 'https://www.linkedin.com/in/wayneyewenhe'
 	},{
 		img: "img/icons/home.png",
-		url: ''
+		url: 'https://wayneyeye.github.io/personal_website'
 	},{
 		img: "img/icons/github.png",
-		url: ''
+		url: 'https://github.com/wayneyeye'
 	},];
 	//import social icons
 	var sideBarSocial ='<div class="row side-bar-contact">';
 	socialIcons.forEach(function(soc){
-		sideBarSocial=sideBarSocial+'<div class="col-xs-3 social"><img src="'+soc.img+'"></div>';
+		sideBarSocial=sideBarSocial+'<div class="col-xs-3 social"><a href='+soc.url+' target="_blank"><img src="'+soc.img+'"></a></div>';
 	})
 	sideBarSocial=sideBarSocial+'</div>';
 
@@ -86,7 +86,7 @@ $(function(){
 			'click': 'toggleSideBar'
 		},
 		render: function(){
-			this.$el.html('<a href="#"><img src="img/icons/goback.png"/></a>');
+			this.$el.html('<img src="img/icons/goback.png"/>');
 			return this;
 		},
 		toggleSideBar: function(){
