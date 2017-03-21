@@ -63,7 +63,11 @@ body{
 }
 .HideButtn{
 	position: absolute;
+	opacity: 30%;
 	right:5px;
+}
+.HideButtn img{
+	width: 30px;
 }
 .side-bar-contact{
 }

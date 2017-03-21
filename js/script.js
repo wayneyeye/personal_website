@@ -11,6 +11,20 @@ $(function(){
 		}
 	});
 //Sidebar contents
+	var socialIcons = [{
+		img: 'img/icons/email.png',
+		url: ''
+	},{
+		img: 'img/icons/linkedin.png',
+		url: ''
+	},{
+		img: 'img/icons/home.png',
+		url: ''
+	},{
+		img: 'img/icons/github.png',
+		url: ''
+	},];
+
 	var SideBarView = Backbone.View.extend({
 		tagName: 'div',
 		className: "container side-bar",
@@ -65,7 +79,7 @@ $(function(){
 			'click': 'toggleSideBar'
 		},
 		render: function(){
-			this.$el.html('<a href="#">Hide</a>');
+			this.$el.html('<a href="#"><img src="img/icons/goback.png"/></a>');
 			return this;
 		},
 		toggleSideBar: function(){
@@ -78,4 +92,5 @@ $(function(){
 	var iSwitch= new sidebarOnOff();
 	var iSidebarView=new SideBarView({model: iSwitch});
 	var iAboutMe = new aboutMeView({model: iSwitch});
+	var iHideButtn =new HideButtn({model: iSwitch});
 });
