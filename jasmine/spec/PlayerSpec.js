@@ -8,6 +8,20 @@ describe("Side-Bar", function() {
   });
 });
 
+describe("Hero SlideShow", function() {
+  beforeEach(function() {});
+  it("should be able to load images", function() {
+    
+  });
+  it("should be able to slide forward", function() {
+    
+  });
+  it("should be able to slide backward", function() {
+    
+  });
+});
+
+
 describe("Player", function() {
   var player;
   var song;
