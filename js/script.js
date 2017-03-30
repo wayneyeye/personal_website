@@ -118,7 +118,19 @@ $(function(){
 	{
 	img:'img/heros/hero_grandteton.jpg',
 	desc:'Snow Mountain in Grand Teton National Park'
-	},];
+	},
+	{
+	img:'img/heros/hero_grandcanyon3.jpg',
+	desc:'Grand Canyon and Colorado River at Navajo Bridge'
+	},
+	{
+	img:'img/heros/hero_yellowstone.jpg',
+	desc:'Yellowstone National Park'
+	},
+	{
+	img:'img/heros/hero_pku.jpg',
+	desc:'Weiming Lake at Peking University'
+	}];
 
 	//Preload image to speed up
 	var preload = new Image();
