@@ -34,6 +34,32 @@ body{
 	color: white;
 	overflow: hidden;
 }
+.hero-left-arrow{
+	position: absolute;
+	left:0px;
+	bottom:10px;
+	opacity: 1;
+}
+.hero-left-arrow img{
+
+}
+.hero-left-arrow:hover{
+	cursor:pointer;
+}
+
+.hero-right-arrow{
+	position: absolute;
+	right:0px;
+	bottom:10px;
+	opacity: 1;
+}
+.hero-right-arrow img{
+
+}
+.hero-right-arrow:hover{
+	cursor:pointer;
+}
+
 
 #img-hero {
 	width: 100%;
