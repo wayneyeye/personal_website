@@ -171,8 +171,8 @@ $(function(){
 			// Create the HTML
 			var hero_img=heroImgs[this.model.get("index")];
 			heroLeadingHTML='<div class="col-md-12 hero"><img src="';
-			heroInnerHTML='" id="img-hero"/><div class="hero-banner"><p>';
-			heroTrailingHTML='</p></div></div>';
+			heroInnerHTML='" id="img-hero"/><div class="hero-banner"><div>';
+			heroTrailingHTML='</div></div></div>';
 			heroHTML=heroLeadingHTML+hero_img.img+heroInnerHTML+hero_img.desc+heroTrailingHTML;
 			this.$el.html(heroHTML);
 			var iLeft=new heroArrowLeft({model: iHero});
