@@ -188,6 +188,10 @@ $(function(){
 			this.$el.html('<div>'+heroImgs[this.model.get("index")].desc+'</div>');
 			var iLeft=new heroArrowLeft({model: iHero});
 			var iRight=new heroArrowRight({model: iHero});
+			var carousel = function(){
+			$(".hero-right-arrow").click();
+			};
+			setTimeout(carousel,8000);
 			return this;
 		}
 	});
