@@ -181,7 +181,7 @@ $(function(){
 			//carousel
 			setInterval(function() {
 				$(".hero-right-arrow").click();
-				}, 10000);
+				}, 8000);
 			},
 		render: function(){
 			// Create the HTML
