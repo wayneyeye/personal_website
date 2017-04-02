@@ -166,6 +166,7 @@ $(function(){
 			$('.hero-slide').append(primerHTML);
 			this.slide= $('.hero');
 			this.listenTo(iHero, 'change', this.render);
+			// adding html
 			heroLeadingHTML='<img class="img-hero" src="';
 			heroTrailingHTML='"/>';
 			var heroHTML='';
@@ -228,7 +229,4 @@ $(function(){
 	});
 	var iHero=new heroSlidesShow();
 	var iSlide=new heroSlide({model: iHero});
-	var iLeft=new heroArrowLeft({model: iHero});	
-	var iRight=new heroArrowRight({model: iHero});
-
 });
