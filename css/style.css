@@ -24,6 +24,7 @@ body{
 	padding-left: 0;
 	padding-right: 0;
 	position: relative;
+	overflow: hidden;
 }
 
 .img-hero{
@@ -32,6 +33,14 @@ body{
 	left: 0;
 	width: 100%;
 	margin:  0;
+	-webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.unhide{
+	opacity: 1;
 }
 
 .hero-placeholder{
@@ -41,23 +50,23 @@ body{
 .hero-banner{
 	width: 100%;
 	position: absolute;
-	bottom: 0;
-	min-height: 30px;
+	bottom: -1px;
+	min-height: 40px;
 	text-align: center;
 	background-color: rgba(0,0,0,1);
 	color: white;
-	opacity: 0.5;
+	opacity: 0.6;
 	transition-duration: 0.5s;
 }
 .hero-banner:hover{
-	opacity: 0.8;
+	opacity: 0.9;
 }
 .hero-banner div{
-	padding-top: 3px;
+	padding-top: 7px;
 }
 .hero-left-arrow{
 	position: absolute;
-	bottom:7px;
+	bottom:10px;
 	left:30px;
 	opacity: 0.7;
 	transition-duration: 0.5s;
@@ -72,7 +81,7 @@ body{
 
 .hero-right-arrow{
 	position: absolute;
-	bottom:7px;
+	bottom:10px;
 	right:30px;
 	opacity: 0.7;
 	transition-duration: 0.5s;

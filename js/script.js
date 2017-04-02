@@ -175,18 +175,19 @@ $(function(){
 				heroHTML=heroHTML+heroLeadingHTML+img_i.img+heroTrailingHTML;
 			});
 			this.slide.append(heroHTML);			
-			$('.hero').append('<div class="hero-banner"></div>');
+			$('.hero').append(this.render().el);
 			var iLeft=new heroArrowLeft({model: iHero});
 			var iRight=new heroArrowRight({model: iHero});
 			},
 		render: function(){
 			// Create the HTML
-			// var hero_img=heroImgs[this.model.get("index")];
-			// heroLeadingHTML='<div class="col-md-12 hero"><img src="';
-			// heroInnerHTML='" id="img-hero"/><div class="hero-banner"><div>';
-			// heroTrailingHTML='</div></div></div>';
-			// heroHTML=heroLeadingHTML+hero_img.img+heroInnerHTML+hero_img.desc+heroTrailingHTML;
-			// this.$el.html(heroHTML);
+			var index=this.model.get("index")+2;
+			var nchildstr='.img-hero:nth-child('+index+')';
+			$('.img-hero').removeClass("unhide");
+			$(nchildstr).addClass("unhide");
+			this.$el.html('<div>'+heroImgs[this.model.get("index")].desc+'</div>');
+			var iLeft=new heroArrowLeft({model: iHero});
+			var iRight=new heroArrowRight({model: iHero});
 			return this;
 		}
 	});
