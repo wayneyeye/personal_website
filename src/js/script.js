@@ -139,9 +139,17 @@ $(function(){
 
 	//Preload image to speed up
 	var preload = new Image();
+	var load_flag=true;
+	preload.onerror=function(){
+		load_flag=false;
+		console.log("error");
+	};
 	heroImgs.forEach(function(hero_img){
 		preload.src = hero_img.img;
 	});
+	if(load_flag){
+		$(".hero-slide").addClass("load-success");
+	}
 	//Backbone model for slides
 		var heroSlidesShow = Backbone.Model.extend({
 			defaults:{

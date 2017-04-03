@@ -3,7 +3,7 @@ describe("Side-Bar", function() {
   beforeEach(function() {
   });
   it("should be able to display", function(done) {
-    var aboutmeBtn=$(".about-me-text");
+    var aboutmeBtn=$(".about-me-text"); //only the about me text is clickable
     aboutmeBtn.click();
     expect($(".side-bar").hasClass("hide")).not.toEqual(true);
     done();
@@ -18,6 +18,7 @@ describe("Hero SlideShow", function() {
   beforeEach(function() {
   });
   it("should be able to load images", function() {
+    expect($(".hero-slide").hasClass("load-success")).toEqual(true);        
   });
   it("should be able to slide forward", function() {
       htmlBefore = $(".hero-banner").html();
