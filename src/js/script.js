@@ -41,14 +41,17 @@ $(function(){
 			this.body= $('body');
 			this.listenTo(iSwitch, 'change', this.render);
 			this.body.append(this.render().el);
+			var ihideSwitch= new HideButtn({model: iSwitch});
+			// this.div= $('.side-bar-title');
+			// this.div.append(ihideSwitch.render().el);
 		},
 		render: function(){
 			// Create the HTML
 			sidebarHTML=sideBarHeader+sideBarSocial+sideBarContent;
-			var ihideSwitch= new HideButtn({model: iSwitch});
 			this.$el.html(sidebarHTML);
-			this.div= $('.side-bar-title');
-			this.div.append(ihideSwitch.render().el);
+			var ihideSwitch= new HideButtn({model: iSwitch});
+			// this.div= $('.side-bar-title');
+			// this.div.append(ihideSwitch.render().el);
 			if(this.model.get('on')){
 				this.$el.removeClass('hide');
 			}
@@ -82,6 +85,8 @@ $(function(){
 		tagName: 'div',
 		className: "col-xs-3 HideButtn",
 		initialize: function(){
+			this.div= $('.side-bar-title');
+			this.div.append(this.render().el);
 		},
 		events:{
 			'click': 'toggleSideBar'
