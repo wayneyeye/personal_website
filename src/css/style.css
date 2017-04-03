@@ -4,7 +4,7 @@ html{
         box-sizing: border-box;
 }
 body{
-	background-image: url("../img/background.jpg");
+	background-image: url("../../img/background.jpg");
 	background-color: #d6e4e0;
 	font-family: 'Questrial', sans-serif;
 }
@@ -108,7 +108,7 @@ body{
 	top:0;
 	left:0px;
 	background-color: rgba(255,255,255,.99);
-	background-image: url("../img/background-side-bar.jpg");
+	background-image: url("../../img/background-side-bar.jpg");
 	color:grey;
 	height: 100vh;
 	overflow: hidden;

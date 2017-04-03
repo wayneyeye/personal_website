@@ -31,7 +31,7 @@ $(function(){
 	var sideBarSocial ='<div class="row side-bar-contact">';
 	socialIcons.forEach(function(soc){
 		sideBarSocial=sideBarSocial+'<div class="col-xs-3 social"><a href='+soc.url+' target="_blank"><img src="'+soc.img+'"></a></div>';
-	})
+	});
 	sideBarSocial=sideBarSocial+'</div>';
 
 	var SideBarView = Backbone.View.extend({
@@ -153,7 +153,7 @@ $(function(){
 			oneBack: function(){
 				var index_t = this.get("index");
 				var max_t = this.get("max");
-				index_t = ((index_t==0)?max_t-1:index_t-1);
+				index_t = ((index_t===0)?max_t-1:index_t-1);
 				this.set("index",index_t);
 			}
 		});
@@ -170,7 +170,7 @@ $(function(){
 			heroLeadingHTML='<img class="img-hero" src="';
 			heroTrailingHTML='"/>';
 			var heroHTML='';
-			heroHTML+='<img class="img-hero hero-placeholder" src="'+heroImgs[0].img+heroTrailingHTML
+			heroHTML+='<img class="img-hero hero-placeholder" src="'+heroImgs[0].img+heroTrailingHTML;
 			heroImgs.forEach(function(img_i){
 				heroHTML=heroHTML+heroLeadingHTML+img_i.img+heroTrailingHTML;
 			});
