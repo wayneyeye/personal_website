@@ -247,4 +247,44 @@ $(function(){
 	});
 	var iHero=new heroSlidesShow();
 	var iSlide=new heroSlide({model: iHero});
+//*************************Useful Links Below****************************************
+	// JSON for saving external links
+	var usefulLinks=[
+		{
+			listname: "Navigation1",
+			urlist:[{
+				url:"#",
+				name:"nav1",
+				desc:"link to nav1"
+				}],
+			desc: "common navigations"
+		},
+		{
+			listname: "Navigation2",
+			urlist:[{
+				url:"#",
+				name:"nav1",
+				desc:"link to nav1"
+				}],
+			desc: "common navigations"
+		},
+		{
+			listname: "Navigation3",
+			urlist:[{
+				url:"#",
+				name:"nav1",
+				desc:"link to nav1"
+				}],
+			desc: "common navigations"
+		},
+		{
+			listname: "Navigation4",
+			urlist:[{
+				url:"#",
+				name:"nav1",
+				desc:"link to nav1"
+				}],
+			desc: "common navigations"
+		}
+	];
 });
