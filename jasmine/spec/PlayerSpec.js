@@ -31,4 +31,16 @@ describe("Hero SlideShow", function() {
     expect($(".hero-banner").html()).not.toEqual(htmlBefore);    
   });
 });
+
+describe("Useful Links", function() {
+  beforeEach(function() {
+  });
+  it("should be able to load url data", function() {
+  });
+  it("should be able to connect each link", function() {
+  });
+  it("should be able to hide/unhide", function() {
+  });
+});
+
 }());
