@@ -38,6 +38,16 @@ module.exports = function(grunt) {
           'dist/css/style.min.css': 'src/css/style.css'
         }
       }
+    },
+    watch: {
+    	scripts:{
+	      files: ['src/**/*.js'],
+	      tasks: ['jshint','uglify']
+    	},
+    	stylesheets:{
+	      files: ['src/css/style.css'],
+	      tasks: ['cssmin']    		
+    	}
     }
   });
 
