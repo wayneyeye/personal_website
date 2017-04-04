@@ -282,7 +282,7 @@ $(function(){
 			urlist:[{
 				url:"#",
 				name:"nav1",
-				desc:"link to nav1"
+				desc:"link to nav000"
 				}],
 			desc: "common navigations"
 		}

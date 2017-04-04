@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         reporter: require('jshint-stylish') // use jshint-stylish to make our errors look and read good
       },
       // when this task is run, lint the Gruntfile and all js files in src
-      build: ['Gruntfile.js', 'src/**/*.js']
+      build: ['Gruntfile.js', 'src/js/*.js']
     },
     uglify: {
       options: {
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
     },
     watch: {
     	scripts:{
-	      files: ['src/**/*.js'],
+	      files: ['src/js/*.js'],
 	      tasks: ['jshint','uglify']
     	},
     	stylesheets:{
