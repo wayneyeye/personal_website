@@ -256,6 +256,11 @@ $(function(){
 				url:"#",
 				name:"nav1",
 				desc:"link to nav1"
+				},
+				{
+				url:"#",
+				name:"nav2",
+				desc:"link to nav2"
 				}],
 			desc: "common navigations"
 		},
@@ -287,4 +292,21 @@ $(function(){
 			desc: "common navigations"
 		}
 	];
+	var usefulLink_box=$(".link-list");
+	var usefulLinkHTML='';
+	for (var i=0;i<usefulLinks.length;i++){
+		Leading='<div class="col-md-3">';
+		Trailing='</div>';
+		usefulLinkHTML+=Leading;
+		usefulLinkHTML+='<ul>'+usefulLinks[i].listname+'</ul>';
+		for (var j=0;j<usefulLinks[i].urlist.length;j++){
+			liLeading='<li><a href="';
+			liTrailing='</a></li>';
+			usefulLinkHTML+=liLeading;
+			usefulLinkHTML+=usefulLinks[i].urlist[j].url+'">'+usefulLinks[i].urlist[j].name;
+			usefulLinkHTML+=liTrailing;
+		}
+		usefulLinkHTML+=Trailing;
+	}
+	usefulLink_box.append(usefulLinkHTML);
 });
