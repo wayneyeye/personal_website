@@ -13,7 +13,9 @@ $(function(){
 	});
 //Sidebar contents
 	var sideBarHeader ='<div class="row side-bar-title"><div class="col-xs-9"><h4>About Me</h4></div></div><div class="row side-bar-potrait"><div class="col-md-12"><img src="img/Wenhe.jpg" id="potrait-img"/></div></div>';
-	var sideBarContent ='<div class="row side-bar-content"><div class="col-md-12"><p>Hi, My name is <strong>Wenhe Ye</strong>...</p><p>My current location is <strong>Dallas, TX</strong></p></div></div><div class="row side-bar-subtitle"><div class="col-md-12"><h5>Interests</h5></div></div><div class="row side-bar-sublist"><div class="col-md-12"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div></div>';
+	var sideBarContent1 ='<div class="row side-bar-content"><div class="col-md-12"><p>';
+	var introText='Hi, My name is <strong>Wenhe Ye</strong>...</p><p>My current location is <strong>Dallas, TX</strong>';
+	var sideBarContent2 ='</p></div></div><div class="row side-bar-subtitle"><div class="col-md-12"><h5>Interests</h5></div></div><div class="row side-bar-sublist"><div class="col-md-12"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div></div>';
 	var socialIcons = [{
 		img: "img/icons/email.png",
 		url: 'mailto:yewenhe0904@gmail.com?subject=Mail to Wenhe'
@@ -47,7 +49,7 @@ $(function(){
 		},
 		render: function(){
 			// Create the HTML
-			sidebarHTML=sideBarHeader+sideBarSocial+sideBarContent;
+			sidebarHTML=sideBarHeader+sideBarSocial+sideBarContent1+introText+sideBarContent2;
 			this.$el.html(sidebarHTML);
 			var ihideSwitch= new HideButtn({model: iSwitch});
 			// this.div= $('.side-bar-title');
