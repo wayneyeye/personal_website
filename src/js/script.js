@@ -262,7 +262,7 @@ $(function(){
 	// JSON for saving external links
 	var usefulLinks=[
 		{
-			listname: "Navigation1",
+			listname: "Most Visited Portals",
 			urlist:[{
 				url:"#",
 				name:"nav1",
@@ -276,7 +276,7 @@ $(function(){
 			desc: "common navigations"
 		},
 		{
-			listname: "Navigation2",
+			listname: "Resources for Data Scientists",
 			urlist:[{
 				url:"#",
 				name:"nav1",
@@ -285,20 +285,11 @@ $(function(){
 			desc: "common navigations"
 		},
 		{
-			listname: "Navigation3",
+			listname: "Logistics for My Perosnal Site",
 			urlist:[{
 				url:"#",
-				name:"nav1",
+				name:"Backbonejs",
 				desc:"link to nav1"
-				}],
-			desc: "common navigations"
-		},
-		{
-			listname: "Navigation4",
-			urlist:[{
-				url:"#",
-				name:"nav1",
-				desc:"link to nav000"
 				}],
 			desc: "common navigations"
 		}
@@ -306,7 +297,7 @@ $(function(){
 	var usefulLink_box=$(".link-list");
 	var usefulLinkHTML='';
 	for (var i=0;i<usefulLinks.length;i++){
-		Leading='<div class="col-md-3">';
+		Leading='<div class="col-md-4">';
 		Trailing='</div>';
 		usefulLinkHTML+=Leading;
 		usefulLinkHTML+='<ul>'+usefulLinks[i].listname+'</ul>';
