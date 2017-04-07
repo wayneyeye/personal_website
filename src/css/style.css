@@ -107,7 +107,6 @@ body{
 	position: fixed;
 	top:0;
 	left:0px;
-	background-color: rgba(255,255,255,.99);
 	background-image: url("../../img/background-side-bar.jpg");
 	color:grey;
 	height: 100vh;
@@ -117,6 +116,7 @@ body{
 	opacity:1;
 	transition-property: left, opacity;
     transition-duration: 0.3s, 1s;
+    box-shadow: 4px 1px 20px 0px #ccc;
 }
 .hide{
 	opacity:0.3;
