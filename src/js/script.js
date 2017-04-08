@@ -116,35 +116,35 @@ $(function(){
 
 //*************************Hero Slide Show****************************************
 	var heroImgs=[{
-	img:'img/heros/hero_slc.jpg',
+	img:'dist/img/heros/hero_slc.jpg',
 	desc:'A Glance at the Salt Lake City'
 	},
 	{
-	img:'img/heros/hero_chicago.jpg',
+	img:'dist/img/heros/hero_chicago.jpg',
 	desc:'A Birdview of Downtown Chicago and Lake Michigan'
 	},
 	{
-	img:'img/heros/hero_grandcanyon.jpg',
+	img:'dist/img/heros/hero_grandcanyon.jpg',
 	desc:'Grand Canyon National Park'
 	},
 	{
-	img:'img/heros/hero_grandcanyon2.jpg',
+	img:'dist/img/heros/hero_grandcanyon2.jpg',
 	desc:'Grand Canyon on Road'
 	},
 	{
-	img:'img/heros/hero_grandteton.jpg',
+	img:'dist/img/heros/hero_grandteton.jpg',
 	desc:'Snow Mountain in Grand Teton National Park'
 	},
 	{
-	img:'img/heros/hero_grandcanyon3.jpg',
+	img:'dist/img/heros/hero_grandcanyon3.jpg',
 	desc:'Grand Canyon and Colorado River at Navajo Bridge'
 	},
 	{
-	img:'img/heros/hero_yellowstone.jpg',
+	img:'dist/img/heros/hero_yellowstone.jpg',
 	desc:'Yellowstone National Park'
 	},
 	{
-	img:'img/heros/hero_pku.jpg',
+	img:'dist/img/heros/hero_pku.jpg',
 	desc:'Weiming Lake at Peking University'
 	}];
 

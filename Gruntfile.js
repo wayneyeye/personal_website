@@ -39,6 +39,50 @@ module.exports = function(grunt) {
         }
       }
     },
+    //make hero img more responsive 
+    responsive_images: {
+      dev: {
+        options: {
+          engine: 'gm',
+          sizes: [{
+            /* Change these */
+            width: 1200,
+            height: 375,
+            rename:false,
+            aspectRatio:false,
+            suffix: '',
+            quality: 70
+          }]
+        },
+        /*
+        You don't need to change this part if you don't change
+        the directory structure.
+        */
+        files: [{
+          expand: true,
+          aspectRatio:false,
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'img/heros',
+          dest: 'dist/img/heros'
+        }]
+      }
+    },
+    /* Clear out the images directory if it exists */
+    clean: {
+      dev: {
+        src: ['dist/img/heros'],
+      },
+    },
+
+    /* Generate the images directory if it is missing */
+    mkdir: {
+      dev: {
+        options: {
+          create: ['dist/img/heros']
+        },
+      },
+    },
+    /*watch file changes*/
     watch: {
     	scripts:{
 	      files: ['src/js/*.js'],
@@ -63,4 +107,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-mkdir');
+  grunt.loadNpmTasks('grunt-responsive-images');
 };
