@@ -182,6 +182,10 @@ body{
 	margin-top: 20px;
 }
 
+.link-list li{
+	padding-left: 30px;
+}
+
 .copyright{
 	text-align: center;
 	color:grey;	
