@@ -1,0 +1,19 @@
+-Most Visited Portals as a Developer 
+	W3:https://www.w3schools.com/
+	Udacity:https://www.udacity.com/
+	Coursera:https://www.coursera.org/
+	
+-Sources for Data Scientists
+	Kaggle:https://www.kaggle.com/
+	U.S. Government Data:https://www.data.gov/
+	Google Trends:http://www.google.com/trends/explore
+	
+-Logistics for This Site
+	Backbonejs:http://backbonejs.org/
+	Bootstrap:http://getbootstrap.com
+	Javascript:https://www.javascript.com/
+	JQuery:https://jquery.com/
+	Grunt:https://gruntjs.com/
+	Jasmine:https://jasmine.github.io/
+	Github:https://github.com/
+	Django:https://www.djangoproject.com/

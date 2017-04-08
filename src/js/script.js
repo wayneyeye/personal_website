@@ -262,33 +262,83 @@ $(function(){
 	// JSON for saving external links
 	var usefulLinks=[
 		{
-			listname: "Most Visited Portals",
+			listname: "Most Visited Portals as a Developer",
 			urlist:[{
-				url:"#",
-				name:"nav1",
-				desc:"link to nav1"
+				url:"https://www.w3schools.com/",
+				name:"W3schools",
+				desc:"link to W3"
 				},
 				{
-				url:"#",
-				name:"nav2",
-				desc:"link to nav2"
+				url:"https://www.udacity.com/",
+				name:"Udacity",
+				desc:"link to Udacity"
+				},
+				{
+				url:"https://www.coursera.org/",
+				name:"Coursera",
+				desc:"link to Coursera"
 				}],
-			desc: "common navigations"
+			desc: "Beginner's favorite sites"
 		},
 		{
 			listname: "Resources for Data Scientists",
 			urlist:[{
-				url:"#",
-				name:"nav1",
-				desc:"link to nav1"
+				url:"https://www.kaggle.com/",
+				name:"Kaggle",
+				desc:"link to Kaggle"
+				},
+				{
+				url:"https://www.data.gov/",
+				name:"U.S. Government Data",
+				desc:"link to data.gov"
+				},
+				{
+				url:"http://www.google.com/trends/explore",
+				name:"Google Trends",
+				desc:"link to Google Trends"
 				}],
-			desc: "common navigations"
+			desc: "If you want to be a data scientist"
 		},
 		{
 			listname: "Logistics for My Perosnal Site",
 			urlist:[{
-				url:"#",
+				url:"http://backbonejs.org/",
 				name:"Backbonejs",
+				desc:"link to nav1"
+				},
+				{
+				url:"http://getbootstrap.com",
+				name:"BootStrap",
+				desc:"link to nav1"
+				},
+				{
+				url:"https://www.javascript.com/",
+				name:"JavaScript",
+				desc:"link to nav1"
+				},
+				{
+				url:"https://jquery.com/",
+				name:"JQuery",
+				desc:"link to nav1"
+				},
+				{
+				url:"https://gruntjs.com/",
+				name:"Grunt",
+				desc:"link to nav1"
+				},
+				{
+				url:"https://jasmine.github.io/",
+				name:"Jasmine",
+				desc:"link to nav1"
+				},
+				{
+				url:"https://github.com/",
+				name:"GitHub",
+				desc:"link to nav1"
+				},
+				{
+				url:"https://www.djangoproject.com/",
+				name:"DJango",
 				desc:"link to nav1"
 				}],
 			desc: "common navigations"
@@ -305,7 +355,7 @@ $(function(){
 			liLeading='<li><a href="';
 			liTrailing='</a></li>';
 			usefulLinkHTML+=liLeading;
-			usefulLinkHTML+=usefulLinks[i].urlist[j].url+'">'+usefulLinks[i].urlist[j].name;
+			usefulLinkHTML+=usefulLinks[i].urlist[j].url+'" target="_blank">'+usefulLinks[i].urlist[j].name;
 			usefulLinkHTML+=liTrailing;
 		}
 		usefulLinkHTML+=Trailing;
