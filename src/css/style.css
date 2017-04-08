@@ -6,6 +6,7 @@ html{
 body{
 	background-image: url("../../img/background.jpg");
 	background-color: #d6e4e0;
+	background-attachment: fixed;
 	font-family: 'Questrial', sans-serif;
 }
 .site-title{
