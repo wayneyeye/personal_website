@@ -49,7 +49,7 @@ $(function(){
 		tagName: 'div',
 		className: "container side-bar",
 		initialize: function(){
-			this.body= $('body');
+			this.body= $('.home');
 			this.listenTo(iSwitch, 'change', this.render);
 			this.body.append(this.render().el);
 			var ihideSwitch= new HideButtn({model: iSwitch});
