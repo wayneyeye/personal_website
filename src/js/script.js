@@ -165,10 +165,10 @@ $(function(){
 		var heroSlidesShow = Backbone.Model.extend({
 			defaults:{
 				max: heroImgs.length,
-				index: 0,
-				play:true,
-				icon:'<img src="img/icons/pause.png" />',
-				trigger:null
+				index: 0, //index to img
+				play:true, //autoplay status
+				icon:'<img src="img/icons/pause.png" />', //autoplay icon
+				trigger:null //handle to setInterval function
 			},
 			// Helper function for checking/unchecking a service
 			oneNext: function(){
