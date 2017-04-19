@@ -94,6 +94,20 @@ body{
 .hero-right-arrow img{
 	width:30px;
 }
+.hero-pause-play {
+	position: absolute;
+	bottom: 10px;
+	right:60px;
+	opacity: 0.7;
+	transition-duration: 0.5s;
+}
+.hero-pause-play img{
+	width:30px;
+}
+.hero-pause-play:hover{
+	opacity: 1;
+	cursor:pointer;
+}
 .hero-right-arrow:hover{
 	opacity: 1;
 	cursor:pointer;

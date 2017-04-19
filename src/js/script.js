@@ -165,7 +165,10 @@ $(function(){
 		var heroSlidesShow = Backbone.Model.extend({
 			defaults:{
 				max: heroImgs.length,
-				index: 0
+				index: 0,
+				play:true,
+				icon:'<img src="img/icons/pause.png" />',
+				trigger:null
 			},
 			// Helper function for checking/unchecking a service
 			oneNext: function(){
@@ -179,6 +182,22 @@ $(function(){
 				var max_t = this.get("max");
 				index_t = ((index_t===0)?max_t-1:index_t-1);
 				this.set("index",index_t);
+			},
+			pausePlay: function(){
+				var icon_t = this.get("icon");
+				icon_t = ((this.get("play")===true)?'<img src="img/icons/play.png" />':'<img src="img/icons/pause.png" />');
+				this.set("icon",icon_t);
+				if (this.get("play")===true){
+					clearInterval(this.get("trigger"));
+				}
+				else
+				{
+					$(".hero-right-arrow").click();
+					this.set("trigger",setInterval(function() {
+							$(".hero-right-arrow").click();
+					}, 8000));
+				}
+				this.set("play",!this.get("play"));
 			}
 		});
 //backbone view for hero image
@@ -202,10 +221,11 @@ $(function(){
 			$('.hero').append(this.render().el);
 			var iLeft=new heroArrowLeft({model: iHero});
 			var iRight=new heroArrowRight({model: iHero});
+			var iPause=new heroPausePlay({model: iHero});
 			//carousel
-			setInterval(function() {
+			this.model.set("trigger",setInterval(function() {
 				$(".hero-right-arrow").click();
-				}, 8000);
+				}, 8000));
 			},
 		render: function(){
 			// Create the HTML
@@ -216,6 +236,7 @@ $(function(){
 			this.$el.html('<div>'+heroImgs[this.model.get("index")].desc+'</div>');
 			var iLeft=new heroArrowLeft({model: iHero});
 			var iRight=new heroArrowRight({model: iHero});
+			var iPause=new heroPausePlay({model: iHero});
 			return this;
 		}
 	});
@@ -237,7 +258,26 @@ $(function(){
 			this.model.oneBack();
 		}
 	});
-
+	
+	var heroPausePlay = Backbone.View.extend({
+		tagName: 'div',
+		className: "hero-pause-play",
+		initialize: function(){
+			this.div= $('.hero-banner');
+			this.div.append(this.render().el);
+		},
+		events:{
+			'click': 'toggleSlides'
+		},
+		render: function(){
+			this.$el.html(this.model.get('icon'));
+			return this;
+		},
+		toggleSlides: function(){
+			this.model.pausePlay();
+		}
+	});
+	
 	var heroArrowRight = Backbone.View.extend({
 		tagName: 'div',
 		className: "hero-right-arrow",
