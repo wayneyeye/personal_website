@@ -112,7 +112,7 @@ module.exports = function(grunt) {
       },
       placeholder: {
         options: {
-          create: ['dist/img/heros']
+          create: ['dist/img/placeholder']
         },
       },
     },
