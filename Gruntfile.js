@@ -41,7 +41,7 @@ module.exports = function(grunt) {
     },
     //make hero img more responsive 
     responsive_images: {
-      dev: {
+      hero: {
         options: {
           engine: 'gm',
           sizes: [{
@@ -65,18 +65,52 @@ module.exports = function(grunt) {
           cwd: 'img/heros',
           dest: 'dist/img/heros'
         }]
+      },
+
+      placeholder: {
+        options: {
+          engine: 'gm',
+          sizes: [{
+            /* Change these */
+            width: 480,
+            height: 320,
+            rename:false,
+            aspectRatio:false,
+            suffix: '',
+            quality: 70
+          }]
+        },
+        /*
+        You don't need to change this part if you don't change
+        the directory structure.
+        */
+        files: [{
+          expand: true,
+          aspectRatio:false,
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'img/placeholder',
+          dest: 'dist/img/placeholder'
+        }]
       }
     },
     /* Clear out the images directory if it exists */
     clean: {
-      dev: {
+      hero: {
         src: ['dist/img/heros'],
+      },
+      placeholder: {
+        src: ['dist/img/placeholder'],
       },
     },
 
     /* Generate the images directory if it is missing */
     mkdir: {
-      dev: {
+      hero: {
+        options: {
+          create: ['dist/img/heros']
+        },
+      },
+      placeholder: {
         options: {
           create: ['dist/img/heros']
         },
@@ -102,6 +136,7 @@ module.exports = function(grunt) {
   // make sure you have run npm install so our app can find these
       // ============= // CREATE TASKS ========== //
   grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']); 
+  grunt.registerTask('gm', ['responsive_images']); 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-less');
