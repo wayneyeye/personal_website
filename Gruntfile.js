@@ -92,6 +92,55 @@ module.exports = function(grunt) {
           cwd: 'img/placeholder',
           dest: 'dist/img/placeholder'
         }]
+      },
+    school_logo_round: {
+        options: {
+          engine: 'gm',
+          sizes: [{
+            /* Change these */
+            width: 150,
+            height: 150,
+            rename:false,
+            aspectRatio:false,
+            suffix: '',
+            quality: 70
+          }]
+        },
+        /*
+        You don't need to change this part if you don't change
+        the directory structure.
+        */
+        files: [{
+          expand: true,
+          aspectRatio:false,
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'img/resume_logos/round',
+          dest: 'dist/img/resume_logos/round'
+        }]
+      },
+    school_logo_horizontal: {
+        options: {
+          engine: 'gm',
+          sizes: [{
+            /* Change these */
+            height: 150,
+            rename:false,
+            aspectRatio:true,
+            suffix: '',
+            quality: 60
+          }]
+        },
+        /*
+        You don't need to change this part if you don't change
+        the directory structure.
+        */
+        files: [{
+          expand: true,
+          aspectRatio:false,
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'img/resume_logos/horizontal',
+          dest: 'dist/img/resume_logos/horizontal'
+        }]
       }
     },
     /* Clear out the images directory if it exists */
@@ -102,6 +151,12 @@ module.exports = function(grunt) {
       placeholder: {
         src: ['dist/img/placeholder'],
       },
+      school_logo_round: {
+        src: ['dist/img/resume_logos/round'],
+      },
+      school_logo_horizontal: {
+        src: ['dist/img/resume_logos/horizontal'],
+      }
     },
 
     /* Generate the images directory if it is missing */
@@ -116,6 +171,16 @@ module.exports = function(grunt) {
           create: ['dist/img/placeholder']
         },
       },
+      school_logo_round: {
+        options: {
+          create: ['dist/img/resume_logos/round']
+        }
+      },
+      school_logo_horizontal: {
+        options: {
+          create: ['dist/img/resume_logos/horizontal']
+        }
+      }
     },
     /*watch file changes*/
     watch: {
