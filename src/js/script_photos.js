@@ -194,6 +194,9 @@ $(function(){
 		},
 		toggleSlides: function(){
 			this.model.oneBack();
+			// reset timer
+			// this.model.pausePlay();
+			// this.model.pausePlay();
 		}
 	});
 	
@@ -232,6 +235,9 @@ $(function(){
 		},
 		toggleSlides: function(){
 			this.model.oneNext();
+			// reset timer
+			// this.model.pausePlay();
+			// this.model.pausePlay();
 		}
 	});
 	var iHero=new heroSlidesShow();
