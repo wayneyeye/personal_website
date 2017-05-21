@@ -63,21 +63,24 @@ body{
 }
 
 .unhide{
-	opacity: 1;
     overflow: hidden;
+    border-radius: 10%;
 }
 .unhide-left{
+	opacity:0.6;
 	top:30%;
 	width: 21.62%;	
 	left: 0;
 }
 .unhide-middle{
-	left: 24.32%;
+	opacity: 1;
+	left: 22.82%;
 }
 .unhide-right{
+	opacity: 0.6;
 	top:30%;
 	width: 21.62%;	
-	left: 81.08%;
+	left: 78.08%;
 }
 
 .hero-banner{
