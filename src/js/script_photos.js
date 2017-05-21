@@ -141,7 +141,6 @@ $(function(){
 			// Create the HTML
 			var index=this.model.get("index")+2;
 			var index_left=this.model.get("index_left")+2;
-			console.log(index_left);
 			var index_right=this.model.get("index_right")+2;
 			var nchildstr='.img-hero-half:nth-child('+index+')';
 			var nchildstr_left='.img-hero-half:nth-child('+index_left+')';
