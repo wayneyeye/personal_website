@@ -49,7 +49,7 @@ body{
 	position: absolute;
 	opacity: 0;
 	left: 0;
-	width: 600px;
+	width: 54.05%;
 	margin:  0;
     overflow: hidden;
 }
@@ -65,17 +65,17 @@ body{
     overflow: hidden;
 }
 .unhide-left{
-	top:100px;
-	width: 240px;	
+	top:30%;
+	width: 21.62%;	
 	left: 0;
 }
 .unhide-middle{
-	left: 270px;
+	left: 24.32%;
 }
 .unhide-right{
-	top:100px;
-	width: 240px;	
-	left: 900px;
+	top:30%;
+	width: 21.62%;	
+	left: 81.08%;
 }
 
 .hero-banner{
