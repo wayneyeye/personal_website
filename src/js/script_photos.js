@@ -68,6 +68,8 @@ $(function(){
 			defaults:{
 				max: heroImgs.length,
 				index: 0, //index to img
+				index_left:heroImgs.length-1,
+				index_right:1,
 				play:true, //autoplay status
 				icon:'<img src="img/icons/pause.png" />', //autoplay icon
 				trigger:null //handle to setInterval function
@@ -76,14 +78,20 @@ $(function(){
 			oneNext: function(){
 				var index_t = this.get("index");
 				var max_t = this.get("max");
+				this.set("index_left",index_t);
 				index_t = ((index_t==max_t-1)?0:index_t+1);
 				this.set("index",index_t);
+				index_t = ((index_t==max_t-1)?0:index_t+1);
+				this.set("index_right",index_t);
 			},
 			oneBack: function(){
 				var index_t = this.get("index");
 				var max_t = this.get("max");
+				this.set("index_right",index_t);
 				index_t = ((index_t===0)?max_t-1:index_t-1);
 				this.set("index",index_t);
+				index_t = ((index_t===0)?max_t-1:index_t-1);
+				this.set("index_left",index_t);
 			},
 			pausePlay: function(){
 				var icon_t = this.get("icon");
@@ -112,18 +120,18 @@ $(function(){
 			this.slide= $('.hero');
 			this.listenTo(iHero, 'change', this.render);
 			// adding html
-			heroLeadingHTML='<img class="img-hero" src="';
+			heroLeadingHTML='<img class="img-hero-half" src="';
 			heroTrailingHTML='"/>';
 			var heroHTML='';
-			heroHTML+='<img class="img-hero hero-placeholder" src="'+heroImgs[0].img+heroTrailingHTML;
+			heroHTML+='<img class="img-hero-half hero-placeholder" src="'+heroImgs[0].img+heroTrailingHTML;
 			heroImgs.forEach(function(img_i){
 				heroHTML=heroHTML+heroLeadingHTML+img_i.img+heroTrailingHTML;
 			});
 			this.slide.append(heroHTML);			
 			$('.hero').append(this.render().el);
-			var iLeft=new heroArrowLeft({model: iHero});
-			var iRight=new heroArrowRight({model: iHero});
-			var iPause=new heroPausePlay({model: iHero});
+			// var iLeft=new heroArrowLeft({model: iHero});
+			// var iRight=new heroArrowRight({model: iHero});
+			// var iPause=new heroPausePlay({model: iHero});
 			//carousel
 			this.model.set("trigger",setInterval(function() {
 				$(".hero-right-arrow").click();
@@ -132,9 +140,19 @@ $(function(){
 		render: function(){
 			// Create the HTML
 			var index=this.model.get("index")+2;
-			var nchildstr='.img-hero:nth-child('+index+')';
-			$('.img-hero').removeClass("unhide");
-			$(nchildstr).addClass("unhide");
+			var index_left=this.model.get("index_left")+2;
+			console.log(index_left);
+			var index_right=this.model.get("index_right")+2;
+			var nchildstr='.img-hero-half:nth-child('+index+')';
+			var nchildstr_left='.img-hero-half:nth-child('+index_left+')';
+			var nchildstr_right='.img-hero-half:nth-child('+index_right+')';
+			$('.img-hero-half').removeClass("unhide-middle");
+			$('.img-hero-half').removeClass("unhide-right");
+			$('.img-hero-half').removeClass("unhide-left");
+			$('.img-hero-half').removeClass("unhide");
+			$(nchildstr).addClass("unhide-middle unhide");
+			$(nchildstr_left).addClass("unhide-left unhide");
+			$(nchildstr_right).addClass("unhide-right unhide");
 			this.$el.html('<div>'+heroImgs[this.model.get("index")].desc+'</div>');
 			var iLeft=new heroArrowLeft({model: iHero});
 			var iRight=new heroArrowRight({model: iHero});

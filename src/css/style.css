@@ -27,6 +27,9 @@ body{
 	position: relative;
 	overflow: hidden;
 }
+.hero-row{
+	padding-bottom: 10px;
+}
 
 .img-hero{
 	position: absolute;
@@ -41,8 +44,13 @@ body{
     overflow: hidden;
 }
 
-.unhide{
-	opacity: 1;
+.img-hero-half{
+
+	position: absolute;
+	opacity: 0;
+	left: 0;
+	width: 600px;
+	margin:  0;
     overflow: hidden;
 }
 
@@ -51,6 +59,25 @@ body{
 	position: relative;
 	overflow: hidden;
 }
+
+.unhide{
+	opacity: 1;
+    overflow: hidden;
+}
+.unhide-left{
+	top:100px;
+	width: 240px;	
+	left: 0;
+}
+.unhide-middle{
+	left: 270px;
+}
+.unhide-right{
+	top:100px;
+	width: 240px;	
+	left: 900px;
+}
+
 .hero-banner{
 	width: 100%;
 	position: absolute;
