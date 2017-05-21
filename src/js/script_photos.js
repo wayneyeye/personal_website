@@ -1,37 +1,54 @@
 $(function(){
 //*************************Featured Stories Slide Show****************************************
 	var heroImgs=[{
-	img:'dist/img/heros/hero_slc.jpg',
-	desc:'A Glance at the Salt Lake City'
+	img:'dist/img/placeholder/placeimg_640_480_animals.jpg',
+	desc:'meow'
 	},
 	{
-	img:'dist/img/heros/hero_chicago.jpg',
-	desc:'A Birdview of Downtown Chicago and Lake Michigan'
+	img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
+	desc:'wonderful!'
 	},
 	{
-	img:'dist/img/heros/hero_grandcanyon.jpg',
-	desc:'Grand Canyon National Park'
+	img:'dist/img/placeholder/placeimg_640_480_arch2.jpg',
+	desc:'delicate'
 	},
 	{
-	img:'dist/img/heros/hero_grandcanyon2.jpg',
-	desc:'Grand Canyon on Road'
+	img:'dist/img/placeholder/placeimg_640_480_grayscale_animals.jpg',
+	desc:'pigeons'
 	},
 	{
-	img:'dist/img/heros/hero_grandteton.jpg',
-	desc:'Snow Mountain in Grand Teton National Park'
+	img:'dist/img/placeholder/placeimg_640_480_grayscalE_any.jpg',
+	desc:'splendid'
 	},
 	{
-	img:'dist/img/heros/hero_grandcanyon3.jpg',
-	desc:'Grand Canyon and Colorado River at Navajo Bridge'
+	img:'dist/img/placeholder/placeimg_640_480_grayscale_nature.jpg',
+	desc:'cool'
 	},
 	{
-	img:'dist/img/heros/hero_yellowstone.jpg',
-	desc:'Yellowstone National Park'
+	img:'dist/img/placeholder/placeimg_640_480_grayscale_people.jpg',
+	desc:'woo!'
 	},
 	{
-	img:'dist/img/heros/hero_pku.jpg',
-	desc:'Weiming Lake at Peking University'
-	}];
+	img:'dist/img/placeholder/placeimg_640_480_nature.jpg',
+	desc:'awesome'
+	},
+	{
+	img:'dist/img/placeholder/placeimg_640_480_people.jpg',
+	desc:'nice'
+	},
+	{
+	img:'dist/img/placeholder/placeimg_640_480_sepia_any.jpg',
+	desc:'hardworking'
+	},
+	{
+	img:'dist/img/placeholder/placeimg_640_480_sepia_tech.jpg',
+	desc:'smartphone'
+	},
+	{
+	img:'dist/img/placeholder/placeimg_640_480_tech.jpg',
+	desc:'smart cellphone'
+	}
+	];
 
 	//Preload image to speed up
 	var preload = new Image();
