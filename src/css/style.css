@@ -73,12 +73,18 @@ body{
 	left: 0;
 	border-radius: 10%;
 	overflow: hidden;
+	-moz-box-shadow: 10px 10px 5px #ccc; 
+	-webkit-box-shadow: 10px 10px 5px #ccc; 
+	box-shadow: 10px 10px 5px #ccc;
 }
 .unhide-middle{
 	opacity: 1;
 	left: 22.82%;
 	border-radius: 10%;
 	overflow: hidden;
+	-moz-box-shadow: 10px 10px 5px #ccc; 
+	-webkit-box-shadow: 10px 10px 5px #ccc; 
+	box-shadow: 10px 10px 5px #ccc;
 }
 .unhide-right{
 	opacity: 0.6;
@@ -87,6 +93,9 @@ body{
 	left: 78.08%;
 	border-radius: 10%;
 	overflow: hidden;
+	-moz-box-shadow: 10px 10px 5px #ccc; 
+	-webkit-box-shadow: 10px 10px 5px #ccc; 
+	box-shadow: 10px 10px 5px #ccc;
 }
 .unhide-far-left{
 	opacity:0;
