@@ -17,7 +17,7 @@ $(function(){
 	desc:'pigeons'
 	},
 	{
-	img:'dist/img/placeholder/placeimg_640_480_grayscalE_any.jpg',
+	img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
 	desc:'splendid'
 	},
 	{
@@ -33,7 +33,7 @@ $(function(){
 	desc:'awesome'
 	},
 	{
-	img:'dist/img/placeholder/placeimg_640_480_people.jpg',
+	img:'dist/img/placeholder/placeimg_640_480_people.png',
 	desc:'nice'
 	},
 	{
