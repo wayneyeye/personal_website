@@ -52,6 +52,8 @@ body{
 	width: 54.05%;
 	margin:  0;
     overflow: hidden;
+/*    transition-property: opacity;
+    transition-duration: 2s;*/
 }
 
 .hero-placeholder{
