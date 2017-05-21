@@ -52,8 +52,8 @@ body{
 	width: 54.05%;
 	margin:  0;
     overflow: hidden;
-/*    transition-property: opacity;
-    transition-duration: 2s;*/
+    transition-property: left,width,opacity;
+    transition-duration: 0.1s;
 }
 
 .hero-placeholder{
@@ -72,11 +72,13 @@ body{
 	width: 21.62%;	
 	left: 0;
 	border-radius: 10%;
+	overflow: hidden;
 }
 .unhide-middle{
 	opacity: 1;
 	left: 22.82%;
 	border-radius: 10%;
+	overflow: hidden;
 }
 .unhide-right{
 	opacity: 0.6;
@@ -84,6 +86,24 @@ body{
 	width: 21.62%;	
 	left: 78.08%;
 	border-radius: 10%;
+	overflow: hidden;
+}
+.unhide-far-left{
+	opacity:0;
+	top:30%;
+	width: 21.62%;	
+	left: -150%;
+	border-radius: 10%;
+	overflow: hidden;
+}
+
+.unhide-far-right{
+	opacity:0;
+	top:30%;
+	width: 21.62%;	
+	left: 100%;
+	border-radius: 10%;
+	overflow: hidden;
 }
 
 .hero-banner{

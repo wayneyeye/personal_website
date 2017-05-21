@@ -70,6 +70,8 @@ $(function(){
 				index: 0, //index to img
 				index_left:heroImgs.length-1,
 				index_right:1,
+				index_far_left:heroImgs.length-2,
+				index_far_right:2,
 				play:true, //autoplay status
 				icon:'<img src="img/icons/pause.png" />', //autoplay icon
 				trigger:null //handle to setInterval function
@@ -78,20 +80,30 @@ $(function(){
 			oneNext: function(){
 				var index_t = this.get("index");
 				var max_t = this.get("max");
+				index_t = ((index_t===0)?max_t-1:index_t-1);
+				this.set("index_far_left",index_t);
+				index_t = ((index_t==max_t-1)?0:index_t+1);
 				this.set("index_left",index_t);
 				index_t = ((index_t==max_t-1)?0:index_t+1);
 				this.set("index",index_t);
 				index_t = ((index_t==max_t-1)?0:index_t+1);
 				this.set("index_right",index_t);
+				index_t = ((index_t==max_t-1)?0:index_t+1);
+				this.set("index_far_right",index_t);
 			},
 			oneBack: function(){
 				var index_t = this.get("index");
 				var max_t = this.get("max");
+				index_t = ((index_t==max_t-1)?0:index_t+1);
+				this.set("index_far_right",index_t);
+				index_t = ((index_t===0)?max_t-1:index_t-1);
 				this.set("index_right",index_t);
 				index_t = ((index_t===0)?max_t-1:index_t-1);
 				this.set("index",index_t);
 				index_t = ((index_t===0)?max_t-1:index_t-1);
 				this.set("index_left",index_t);
+				index_t = ((index_t===0)?max_t-1:index_t-1);
+				this.set("index_far_left",index_t);
 			},
 			pausePlay: function(){
 				var icon_t = this.get("icon");
@@ -142,16 +154,23 @@ $(function(){
 			var index=this.model.get("index")+2;
 			var index_left=this.model.get("index_left")+2;
 			var index_right=this.model.get("index_right")+2;
+			var index_far_left=this.model.get("index_far_left")+2;
+			var index_far_right=this.model.get("index_far_right")+2;
 			var nchildstr='.img-hero-half:nth-child('+index+')';
 			var nchildstr_left='.img-hero-half:nth-child('+index_left+')';
 			var nchildstr_right='.img-hero-half:nth-child('+index_right+')';
+			var nchildstr_far_left='.img-hero-half:nth-child('+index_far_left+')';
+			var nchildstr_far_right='.img-hero-half:nth-child('+index_far_right+')';
 			$('.img-hero-half').removeClass("unhide-middle");
 			$('.img-hero-half').removeClass("unhide-right");
 			$('.img-hero-half').removeClass("unhide-left");
-			$('.img-hero-half').removeClass("unhide");
-			$(nchildstr).addClass("unhide-middle unhide");
-			$(nchildstr_left).addClass("unhide-left unhide");
-			$(nchildstr_right).addClass("unhide-right unhide");
+			$('.img-hero-half').removeClass("unhide-far-right");
+			$('.img-hero-half').removeClass("unhide-far-left");
+			$(nchildstr).addClass("unhide-middle");
+			$(nchildstr_left).addClass("unhide-left");
+			$(nchildstr_right).addClass("unhide-right");
+			$(nchildstr_far_left).addClass("unhide-far-left");
+			$(nchildstr_far_right).addClass("unhide-far-right");
 			this.$el.html('<div>'+heroImgs[this.model.get("index")].desc+'</div>');
 			var iLeft=new heroArrowLeft({model: iHero});
 			var iRight=new heroArrowRight({model: iHero});
