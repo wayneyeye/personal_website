@@ -25,7 +25,8 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/js/script.min.js': ['src/js/script.js']
+          'dist/js/script.min.js': ['src/js/script.js'],
+          'dist/js/script_photos.min.js': ['src/js/script_photos.js']          
         }
       }
     },
