@@ -196,6 +196,7 @@ body{
 	transition-property: left, opacity;
     transition-duration: 0.3s, 1s;
     box-shadow: 4px 1px 20px 0px #ccc;
+    text-align: justify;
 }
 .hide{
 	opacity:0.3;
