@@ -276,3 +276,8 @@ body{
 	margin-bottom: 30px;
 	width: 100%;
 }
+
+.resume-header{
+	font-weight: bold;
+	padding-top: 10px;
+}
