@@ -1,7 +1,8 @@
 resumeData={
 "FirstName":'Wenhe',
 "LastName":'Ye',
-"ProfilePicture":'',	
+"ProfilePicture":'img/photo-placeholder.jpg',	
+"DesiredPosition":['Data Analyst','Business Analyst'],
 "Education":[{
 	"order":1,
 	"schoolname":'Peking University',
@@ -38,10 +39,15 @@ resumeData={
 	"from":2016,
 	"to":2018,
 },],
+"Skills":[],
 "Professional":[],
 "Project":[],
 };
 $(function(){
+$('.wenhe-photo').append('<img src="'+resumeData.ProfilePicture+'"></img>');
+resumeData.DesiredPosition.forEach(function(item){
+	$('.desired').append('<div class="col-md-12">'+item+'</div>');
+});
 
 resumeData.Education.forEach(function(item)
 {
@@ -50,7 +56,7 @@ resumeData.Education.forEach(function(item)
 	$('.education').append('<div class="col-md-1">'+item.to+'</div>');
 	$('.education').append('<div class="col-md-3">'+item.degreetype+'</div>');
 	$('.education').append('<div class="col-md-12">'+item.subdivision+'</div>');
-	$('.education').append('<div class="col-md-1">'+item.location+'</div>');
+	$('.education').append('<div class="col-md-3">'+item.location+'</div>');
 	$('.education').append('<div class="col-md-3">'+item.state+'</div>');
 	$('.education').append('<div class="col-md-3">'+item.country+'</div>');
 });

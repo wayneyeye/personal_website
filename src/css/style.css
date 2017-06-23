@@ -269,15 +269,25 @@ body{
 .copyright{
 	text-align: center;
 	color:grey;	
+	margin-bottom: 10px;
 }
 
 .copyright-info{
-	margin-top: 10px;
-	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	width: 100%;
 }
 
 .resume-header{
 	font-weight: bold;
 	padding-top: 10px;
+}
+
+.resume-sub{
+	padding-left:50px;
+}
+
+.wenhe-photo img{
+	width:300px;
+	padding-bottom: 20px;
 }
