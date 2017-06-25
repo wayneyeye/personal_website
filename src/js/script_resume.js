@@ -39,7 +39,16 @@ resumeData={
 	"from":2016,
 	"to":2018,
 },],
-"Skills":[],
+"Skills":[
+{'name':'Javascript','link':''},
+{'name':'CSS','link':''},
+{'name':'HTML','link':''},
+{'name':'Python','link':''},
+{'name':'SQL','link':''},
+{'name':'Excel','link':''},
+{'name':'Alteryx','link':''},
+{'name':'Analytics','link':''},
+],
 "Professional":[],
 "Project":[],
 };
@@ -59,6 +68,20 @@ resumeData.Education.forEach(function(item)
 	$('.education').append('<div class="col-md-3">'+item.location+'</div>');
 	$('.education').append('<div class="col-md-3">'+item.state+'</div>');
 	$('.education').append('<div class="col-md-3">'+item.country+'</div>');
+});
+
+resumeData.Skills.forEach(function(item)
+{
+	if(item.name.length>7){
+		$('.skills').append('<div class="col-lg-3 col-md-3 col-xs-2 col-sm-2"><a href="#">'+item.name+'</a></div>');
+	}
+	else if(item.name.length>4){
+		$('.skills').append('<div class="col-lg-2 col-md-3 col-xs-2 col-sm-2"><a href="#">'+item.name+'</a></div>');
+	}
+	else{
+		$('.skills').append('<div class="col-lg-1 col-md-2 col-sm-2"><a href="#">'+item.name+'</a></div>');
+	}
+	
 });
 
 

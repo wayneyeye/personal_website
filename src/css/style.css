@@ -291,3 +291,11 @@ body{
 	width:300px;
 	padding-bottom: 20px;
 }
+.skills a{
+	background-color: #ddd;
+	padding:5px;
+	color:black;
+}
+.skills > div{
+	margin: 3px;
+}
