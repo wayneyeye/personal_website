@@ -75,7 +75,7 @@ resumeData.Skills.forEach(function(item)
 	if(item.name.length>7){
 		$('.skills').append('<div class="col-lg-3 col-md-3 col-xs-2 col-sm-2"><a href="#">'+item.name+'</a></div>');
 	}
-	else if(item.name.length>4){
+	else if(item.name.length>3){
 		$('.skills').append('<div class="col-lg-2 col-md-3 col-xs-2 col-sm-2"><a href="#">'+item.name+'</a></div>');
 	}
 	else{
