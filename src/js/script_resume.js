@@ -49,7 +49,18 @@ resumeData={
 {'name':'Alteryx','link':''},
 {'name':'Analytics','link':''},
 ],
-"Professional":[],
+"Professional":[
+{
+	"order":1,
+	"company":'',
+	"subdivision":'',
+	"position":'',
+	'location':'',
+	"from":2013,
+	"to":2014,
+	"experience":[]
+}
+],
 "Project":[],
 };
 $(function(){
