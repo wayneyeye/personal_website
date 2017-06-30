@@ -52,12 +52,24 @@ resumeData={
 "Professional":[
 {
 	"order":1,
-	"company":'ATCG Solutions',
+	"company":'EFGH Solutions',
 	"subdivision":'',
 	"position":'Data Analyst',
 	'location':'Richardson, Texas',
-	"from":04/2016,
-	"to":12/2016,
+	"from":'04/2016',
+	"to":'12/2016',
+	"experience":['Migrated multiple legacy databases (Oracle, SQL Server, Access) into redesigned data warehouse using SSIS and validated to ensure integrity',
+	'Wrote complex SQL queries and developed views, stored procedures and user-defined functions over large datasets (~100 GB)',
+	'Improved performance for expensive queries by different techniques, including indexing and caching']
+},
+{
+	"order":2,
+	"company":'ABCD Solutions',
+	"subdivision":'',
+	"position":'Data Analyst',
+	'location':'Richardson, Texas',
+	"from":'04/2016',
+	"to":'12/2016',
 	"experience":['Migrated multiple legacy databases (Oracle, SQL Server, Access) into redesigned data warehouse using SSIS and validated to ensure integrity',
 	'Wrote complex SQL queries and developed views, stored procedures and user-defined functions over large datasets (~100 GB)',
 	'Improved performance for expensive queries by different techniques, including indexing and caching']
@@ -95,6 +107,19 @@ resumeData.Skills.forEach(function(item)
 		$('.skills').append('<div><a href="#">'+item.name+'</a></div>');
 	}
 	
+});
+
+resumeData.Professional.forEach(function(item)
+{
+	$('.profession').append('<div class="col-md-6"><h6>'+item.company+'</h6></div>');
+	$('.profession').append('<div class="col-md-6"><h6>'+item.location+'</h6></div>');
+	$('.profession').append('<div class="col-md-6"><h6>'+item.position+'</h6></div>');
+	$('.profession').append('<div class="col-md-6"><h6>'+item.from+'-'+item.to+'</h6></div>');
+	$('.profession').append('<div class="col-md-12"><ul></ul></div>');
+	item.experience.forEach(function(exp){
+		$('div ul:last').append('<li>'+exp+'</li>');
+	});
+
 });
 
 

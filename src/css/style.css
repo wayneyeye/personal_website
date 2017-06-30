@@ -304,3 +304,7 @@ body{
 	margin-bottom: 8px;
 	float:left;
 }
+
+.profession ul{
+	padding:0;
+}
