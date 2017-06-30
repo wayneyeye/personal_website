@@ -52,13 +52,15 @@ resumeData={
 "Professional":[
 {
 	"order":1,
-	"company":'',
+	"company":'ATCG Solutions',
 	"subdivision":'',
-	"position":'',
-	'location':'',
-	"from":2013,
-	"to":2014,
-	"experience":[]
+	"position":'Data Analyst',
+	'location':'Richardson, Texas',
+	"from":04/2016,
+	"to":12/2016,
+	"experience":['Migrated multiple legacy databases (Oracle, SQL Server, Access) into redesigned data warehouse using SSIS and validated to ensure integrity',
+	'Wrote complex SQL queries and developed views, stored procedures and user-defined functions over large datasets (~100 GB)',
+	'Improved performance for expensive queries by different techniques, including indexing and caching']
 }
 ],
 "Project":[],
@@ -83,14 +85,14 @@ resumeData.Education.forEach(function(item)
 
 resumeData.Skills.forEach(function(item)
 {
-	if(item.name.length>9){
-		$('.skills').append('<div class="col-lg-3 col-md-3 col-xs-2 col-sm-2"><a href="#">'+item.name+'</a></div>');
+	if(item.name.length>8){
+		$('.skills').append('<div><a href="#">'+item.name+'</a></div>');
 	}
 	else if(item.name.length>3){
-		$('.skills').append('<div class="col-lg-2 col-md-3 col-xs-2 col-sm-2"><a href="#">'+item.name+'</a></div>');
+		$('.skills').append('<div><a href="#">'+item.name+'</a></div>');
 	}
 	else{
-		$('.skills').append('<div class="col-lg-1 col-md-2 col-sm-2"><a href="#">'+item.name+'</a></div>');
+		$('.skills').append('<div><a href="#">'+item.name+'</a></div>');
 	}
 	
 });

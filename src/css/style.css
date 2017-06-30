@@ -292,13 +292,15 @@ body{
 	padding-bottom: 20px;
 }
 .skills a{
-	background-color: #ddd;
+	background-color: rgba(91, 192, 222, 0.3);
 	color:black;
 	padding:2px;
 	display: inline-block;
-	border-radius: 20%;
+	border-radius: 10%;
 }
 .skills div{
-	margin: 3px;
+	padding: 0;
+	margin-left: 12px;
+	margin-bottom: 8px;
 	float:left;
 }
