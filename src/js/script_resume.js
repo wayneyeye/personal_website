@@ -82,7 +82,13 @@ resumeData={
 	'Improved performance for expensive queries by different techniques, including indexing and caching']
 }
 ],
-"Project":[],
+"Project":[{
+	"name":"Simulation Based Optimization",
+	"link":"http://www.sciencedirect.com/science/article/pii/S0098135416300060"
+},{
+	"name":"Project 2",
+	"link":""
+}],
 };
 $(function(){
 $('.wenhe-photo').append('<img src="'+resumeData.ProfilePicture+'"></img>');
@@ -129,6 +135,11 @@ resumeData.Professional.forEach(function(item)
 
 });
 
+resumeData.Project.forEach(function(item)
+{
+	$('.projects').append('<div class="col-md-12"><a href="'+item.link+'">'+item.name+'</h6></div>');
+
+});
 
 
 });
