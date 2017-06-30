@@ -48,6 +48,13 @@ resumeData={
 {'name':'Excel','link':''},
 {'name':'Alteryx','link':''},
 {'name':'Analytics','link':''},
+{'name':'Machine Learning','link':''},
+{'name':'Financial Analytics','link':''},
+{'name':'Supply Chain Management','link':''},
+{'name':'Optimization','link':''},
+{'name':'Linux','link':''},
+{'name':'SAS','link':''},
+{'name':'R','link':''},
 ],
 "Professional":[
 {
