@@ -9,11 +9,10 @@ resumeData={
 	"subdivision":'College of Chemistry and Molecular Engineering',
 	"degreetype":"Bachelor's",
 	"major":'Applied Chemistry',
-	"location":'Beijing',
-	"state":'China',
-	"country":'China',
+	"location":'Beijing, China',
 	"from":2008,
 	"to":2012,
+	"logo":"dist/img/resume_logos/round/PKU_round.png"
 },
 {
 	"order":2,
@@ -21,11 +20,10 @@ resumeData={
 	"subdivision":'McCormick School of Engineering',
 	"degreetype":"Master's",
 	"major":'Chemical Engineering',
-	"location":'Evanston',
-	"state":'Illinois',
-	"country":'U.S.A',
+	"location":'Evanston, Illinois',
 	"from":2013,
 	"to":2015,
+	"logo":"dist/img/resume_logos/round/Northwestern_round.png"
 },
 {
 	"order":3,
@@ -33,11 +31,10 @@ resumeData={
 	"subdivision":'Naveen Jindal School of Management',
 	"degreetype":"Master's",
 	"major":'Business Analytics',
-	"location":'Richardson',
-	"state":'Texas',
-	"country":'U.S.A',
+	"location":'Richardson, Texas',
 	"from":2016,
 	"to":2018,
+	"logo":"dist/img/resume_logos/round/utd_round.png"
 },],
 "Skills":[
 {'name':'Javascript','link':''},
@@ -98,14 +95,13 @@ resumeData.DesiredPosition.forEach(function(item){
 
 resumeData.Education.forEach(function(item)
 {
-	$('.education').append('<div class="col-md-12">'+item.schoolname+'</div>');
-	$('.education').append('<div class="col-md-1">'+item.from+'</div>');
-	$('.education').append('<div class="col-md-1">'+item.to+'</div>');
-	$('.education').append('<div class="col-md-3">'+item.degreetype+'</div>');
+	$('.education').append('<div class="col-md-7 schoolname">'+item.schoolname+'</div>');
+	$('.schoolname:last').append('<div class="schoollogo"><img src="'+item.logo+'"></img></div>');
+	$('.education').append('<div class="col-md-5 location">'+item.location+'</div>');
+	$('.education').append('<div class="col-md-7 degree">'+item.degreetype+' Degree</div>');
+	$('.education').append('<div class="col-md-5 degree">'+item.from+'-'+item.to+'</div>');
 	$('.education').append('<div class="col-md-12">'+item.subdivision+'</div>');
-	$('.education').append('<div class="col-md-3">'+item.location+'</div>');
-	$('.education').append('<div class="col-md-3">'+item.state+'</div>');
-	$('.education').append('<div class="col-md-3">'+item.country+'</div>');
+	
 });
 
 resumeData.Skills.forEach(function(item)

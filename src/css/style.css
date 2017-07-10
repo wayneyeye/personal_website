@@ -308,3 +308,37 @@ body{
 .profession ul{
 	padding:0;
 }
+
+.schoolname{
+	font-weight: bold;
+	padding-top: 8px;
+	position: relative;
+}
+.location{
+	padding-top: 8px;
+}
+
+.degree{
+	font-size: 90%;
+	font-style: italic;
+}
+.schoollogo{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	
+}
+.schoollogo img{
+	position: inherit;
+	height: 50px;
+	opacity: 0.7;
+	left:-80px;
+	transition-property: left,height;
+    transition-duration: 0.3s,0.3s;
+
+}
+
+.schoollogo img:hover{
+	left:-70px;
+	height: 60px;
+}

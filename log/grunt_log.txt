@@ -1,2 +1,782 @@
 Running "watch" task
 Waiting...
+Running "watch" task
+Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.78 kB → 4.23 kB
+>> 3 files created.
+
+Done.
+Completed in 1.544s at Sun Jul 09 2017 22:36:34 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.78 kB → 4.23 kB
+>> 3 files created.
+
+Done.
+Completed in 1.288s at Sun Jul 09 2017 22:38:24 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.83 kB → 4.02 kB
+
+Done.
+Completed in 1.055s at Sun Jul 09 2017 22:39:43 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.86 kB → 4.04 kB
+
+Done.
+Completed in 0.870s at Sun Jul 09 2017 22:40:11 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.86 kB → 4.04 kB
+
+Done.
+Completed in 0.828s at Sun Jul 09 2017 22:40:19 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.86 kB → 4.04 kB
+
+Done.
+Completed in 0.854s at Sun Jul 09 2017 22:40:26 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.86 kB → 4.04 kB
+
+Done.
+Completed in 0.837s at Sun Jul 09 2017 22:40:28 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.86 kB → 4.04 kB
+
+Done.
+Completed in 0.851s at Sun Jul 09 2017 22:40:57 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.86 kB → 4.04 kB
+
+Done.
+Completed in 0.841s at Sun Jul 09 2017 22:41:06 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.86 kB → 4.04 kB
+
+Done.
+Completed in 0.866s at Sun Jul 09 2017 22:41:22 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.79 kB → 4.23 kB
+>> 3 files created.
+
+Done.
+Completed in 1.255s at Sun Jul 09 2017 22:41:29 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.86 kB → 4.04 kB
+
+Done.
+Completed in 0.845s at Sun Jul 09 2017 22:41:34 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.86 kB → 4.04 kB
+
+Done.
+Completed in 0.847s at Sun Jul 09 2017 22:41:43 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.87 kB → 4.31 kB
+>> 3 files created.
+
+Done.
+Completed in 1.252s at Sun Jul 09 2017 22:42:20 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.87 kB → 4.31 kB
+>> 3 files created.
+
+Done.
+Completed in 1.230s at Sun Jul 09 2017 22:42:30 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.88 kB → 4.31 kB
+>> 3 files created.
+
+Done.
+Completed in 1.250s at Sun Jul 09 2017 22:42:46 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.66 kB → 4.11 kB
+>> 3 files created.
+
+Done.
+Completed in 1.244s at Sun Jul 09 2017 22:42:56 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.59 kB → 4.04 kB
+>> 3 files created.
+
+Done.
+Completed in 1.258s at Sun Jul 09 2017 22:43:08 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.88 kB → 4.06 kB
+
+Done.
+Completed in 0.850s at Sun Jul 09 2017 22:43:42 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.5 kB → 3.97 kB
+>> 3 files created.
+
+Done.
+Completed in 1.241s at Sun Jul 09 2017 22:44:34 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.35 kB → 3.84 kB
+>> 3 files created.
+
+Done.
+Completed in 1.294s at Sun Jul 09 2017 22:45:01 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.35 kB → 3.84 kB
+>> 3 files created.
+
+Done.
+Completed in 1.230s at Sun Jul 09 2017 22:45:24 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.35 kB → 3.84 kB
+>> 3 files created.
+
+Done.
+Completed in 1.233s at Sun Jul 09 2017 22:45:32 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.35 kB → 3.84 kB
+>> 3 files created.
+
+Done.
+Completed in 1.264s at Sun Jul 09 2017 22:45:49 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.35 kB → 3.84 kB
+>> 3 files created.
+
+Done.
+Completed in 1.252s at Sun Jul 09 2017 22:46:22 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.89 kB → 4.07 kB
+
+Done.
+Completed in 0.855s at Sun Jul 09 2017 22:47:26 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.9 kB → 4.07 kB
+
+Done.
+Completed in 0.842s at Sun Jul 09 2017 22:47:34 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.95 kB → 4.12 kB
+
+Done.
+Completed in 0.831s at Sun Jul 09 2017 22:48:15 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.97 kB → 4.13 kB
+
+Done.
+Completed in 0.837s at Sun Jul 09 2017 22:48:23 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.97 kB → 4.13 kB
+
+Done.
+Completed in 0.855s at Sun Jul 09 2017 22:48:30 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.36 kB → 3.85 kB
+>> 3 files created.
+
+Done.
+Completed in 1.257s at Sun Jul 09 2017 22:48:31 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.93 kB → 4.1 kB
+
+Done.
+Completed in 0.840s at Sun Jul 09 2017 22:48:45 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.93 kB → 4.1 kB
+
+Done.
+Completed in 0.878s at Sun Jul 09 2017 22:52:19 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.36 kB → 3.85 kB
+>> 3 files created.
+
+Done.
+Completed in 1.269s at Sun Jul 09 2017 22:53:44 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.67 kB → 4.15 kB
+>> 3 files created.
+
+Done.
+Completed in 1.241s at Sun Jul 09 2017 23:01:12 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.65 kB → 4.13 kB
+>> 3 files created.
+
+Done.
+Completed in 1.260s at Sun Jul 09 2017 23:03:57 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.65 kB → 4.13 kB
+>> 3 files created.
+
+Done.
+Completed in 1.241s at Sun Jul 09 2017 23:05:03 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.96 kB → 4.13 kB
+
+Done.
+Completed in 0.864s at Sun Jul 09 2017 23:05:29 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.99 kB → 4.15 kB
+
+Done.
+Completed in 0.849s at Sun Jul 09 2017 23:05:34 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.96 kB → 4.13 kB
+
+Done.
+Completed in 0.845s at Sun Jul 09 2017 23:05:49 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.98 kB → 4.14 kB
+
+Done.
+Completed in 0.842s at Sun Jul 09 2017 23:06:03 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 4.98 kB → 4.14 kB
+
+Done.
+Completed in 0.846s at Sun Jul 09 2017 23:06:28 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5 kB → 4.16 kB
+
+Done.
+Completed in 0.847s at Sun Jul 09 2017 23:06:45 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.01 kB → 4.17 kB
+
+Done.
+Completed in 0.844s at Sun Jul 09 2017 23:07:08 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.03 kB → 4.18 kB
+
+Done.
+Completed in 0.941s at Sun Jul 09 2017 23:07:59 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.07 kB → 4.21 kB
+
+Done.
+Completed in 0.869s at Sun Jul 09 2017 23:09:08 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.04 kB → 4.2 kB
+
+Done.
+Completed in 0.851s at Sun Jul 09 2017 23:09:18 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.03 kB → 4.18 kB
+
+Done.
+Completed in 0.846s at Sun Jul 09 2017 23:10:14 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.67 kB → 4.14 kB
+>> 3 files created.
+
+Done.
+Completed in 1.241s at Sun Jul 09 2017 23:14:33 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.66 kB → 4.13 kB
+>> 3 files created.
+
+Done.
+Completed in 1.258s at Sun Jul 09 2017 23:14:47 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.05 kB → 4.2 kB
+
+Done.
+Completed in 0.855s at Sun Jul 09 2017 23:15:17 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.65 kB → 4.13 kB
+>> 3 files created.
+
+Done.
+Completed in 1.241s at Sun Jul 09 2017 23:16:04 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.66 kB → 4.13 kB
+>> 3 files created.
+
+Done.
+Completed in 1.242s at Sun Jul 09 2017 23:16:33 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.65 kB → 4.13 kB
+>> 3 files created.
+
+Done.
+Completed in 1.283s at Sun Jul 09 2017 23:16:48 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.65 kB → 4.13 kB
+>> 3 files created.
+
+Done.
+Completed in 1.267s at Sun Jul 09 2017 23:17:52 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.06 kB → 4.21 kB
+
+Done.
+Completed in 0.826s at Sun Jul 09 2017 23:18:07 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.07 kB → 4.21 kB
+
+Done.
+Completed in 0.844s at Sun Jul 09 2017 23:18:08 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.08 kB → 4.22 kB
+
+Done.
+Completed in 0.842s at Sun Jul 09 2017 23:18:44 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.07 kB → 4.21 kB
+
+Done.
+Completed in 0.860s at Sun Jul 09 2017 23:18:53 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.07 kB → 4.21 kB
+
+Done.
+Completed in 0.838s at Sun Jul 09 2017 23:19:17 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.08 kB → 4.22 kB
+
+Done.
+Completed in 0.849s at Sun Jul 09 2017 23:19:37 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.08 kB → 4.22 kB
+
+Done.
+Completed in 0.838s at Sun Jul 09 2017 23:19:48 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.08 kB → 4.22 kB
+
+Done.
+Completed in 0.843s at Sun Jul 09 2017 23:19:59 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.16 kB → 4.29 kB
+
+Done.
+Completed in 0.861s at Sun Jul 09 2017 23:20:28 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.16 kB → 4.29 kB
+
+Done.
+Completed in 0.869s at Sun Jul 09 2017 23:20:48 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.17 kB → 4.3 kB
+
+Done.
+Completed in 0.834s at Sun Jul 09 2017 23:21:05 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.12 kB → 4.26 kB
+
+Done.
+Completed in 0.852s at Sun Jul 09 2017 23:21:32 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.12 kB → 4.26 kB
+
+Done.
+Completed in 0.849s at Sun Jul 09 2017 23:21:58 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.12 kB → 4.25 kB
+
+Done.
+Completed in 0.856s at Sun Jul 09 2017 23:22:14 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.13 kB → 4.26 kB
+
+Done.
+Completed in 0.867s at Sun Jul 09 2017 23:22:43 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.13 kB → 4.27 kB
+
+Done.
+Completed in 0.850s at Sun Jul 09 2017 23:22:56 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.13 kB → 4.27 kB
+
+Done.
+Completed in 0.835s at Sun Jul 09 2017 23:23:01 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.13 kB → 4.26 kB
+
+Done.
+Completed in 0.878s at Sun Jul 09 2017 23:23:12 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.13 kB → 4.26 kB
+
+Done.
+Completed in 0.843s at Sun Jul 09 2017 23:24:01 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.13 kB → 4.26 kB
+
+Done.
+Completed in 0.855s at Sun Jul 09 2017 23:24:12 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.13 kB → 4.26 kB
+
+Done.
+Completed in 0.857s at Sun Jul 09 2017 23:24:57 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.15 kB → 4.28 kB
+
+Done.
+Completed in 0.869s at Sun Jul 09 2017 23:25:12 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.15 kB → 4.27 kB
+
+Done.
+Completed in 0.842s at Sun Jul 09 2017 23:25:20 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.17 kB → 4.29 kB
+
+Done.
+Completed in 0.836s at Sun Jul 09 2017 23:25:57 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.17 kB → 4.29 kB
+
+Done.
+Completed in 0.839s at Sun Jul 09 2017 23:26:00 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.22 kB → 4.33 kB
+
+Done.
+Completed in 0.831s at Sun Jul 09 2017 23:26:31 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.21 kB → 4.32 kB
+
+Done.
+Completed in 0.838s at Sun Jul 09 2017 23:28:31 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.21 kB → 4.32 kB
+
+Done.
+Completed in 0.852s at Sun Jul 09 2017 23:28:48 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.21 kB → 4.32 kB
+
+Done.
+Completed in 0.847s at Sun Jul 09 2017 23:30:32 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.21 kB → 4.32 kB
+
+Done.
+Completed in 0.838s at Sun Jul 09 2017 23:31:05 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 11.9 kB → 8.02 kB
+File dist/js/script_photos.min.js created: 7.85 kB → 5.06 kB
+File dist/js/script_resume.min.js created: 4.62 kB → 4.09 kB
+>> 3 files created.
+
+Done.
+Completed in 1.232s at Sun Jul 09 2017 23:33:02 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.21 kB → 4.32 kB
+
+Done.
+Completed in 0.852s at Sun Jul 09 2017 23:33:43 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.19 kB → 4.31 kB
+
+Done.
+Completed in 0.853s at Sun Jul 09 2017 23:34:43 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.19 kB → 4.31 kB
+
+Done.
+Completed in 0.853s at Sun Jul 09 2017 23:35:06 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.19 kB → 4.31 kB
+
+Done.
+Completed in 0.842s at Sun Jul 09 2017 23:35:22 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.19 kB → 4.31 kB
+
+Done.
+Completed in 0.845s at Sun Jul 09 2017 23:35:35 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.19 kB → 4.31 kB
+
+Done.
+Completed in 0.835s at Sun Jul 09 2017 23:36:28 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.19 kB → 4.31 kB
+
+Done.
+Completed in 0.840s at Sun Jul 09 2017 23:36:43 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.2 kB → 4.32 kB
+
+Done.
+Completed in 0.838s at Sun Jul 09 2017 23:36:58 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.22 kB → 4.34 kB
+
+Done.
+Completed in 0.847s at Sun Jul 09 2017 23:37:07 GMT-0500 (CDT) - Waiting...
