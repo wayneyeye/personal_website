@@ -5,14 +5,14 @@ resumeData={
 "DesiredPosition":['Data Analyst','Business Analyst'],
 "Education":[{
 	"order":1,
-	"schoolname":'Peking University',
-	"subdivision":'College of Chemistry and Molecular Engineering',
-	"degreetype":"Bachelor's",
-	"major":'Applied Chemistry',
-	"location":'Beijing, China',
-	"from":2008,
-	"to":2012,
-	"logo":"dist/img/resume_logos/round/PKU_round.png"
+	"schoolname":'University of Texas at Dallas',
+	"subdivision":'Naveen Jindal School of Management',
+	"degreetype":"Master's",
+	"major":'Business Analytics',
+	"location":'Richardson, Texas',
+	"from":2016,
+	"to":2018,
+	"logo":"dist/img/resume_logos/round/utd_round.png"
 },
 {
 	"order":2,
@@ -27,15 +27,15 @@ resumeData={
 },
 {
 	"order":3,
-	"schoolname":'University of Texas at Dallas',
-	"subdivision":'Naveen Jindal School of Management',
-	"degreetype":"Master's",
-	"major":'Business Analytics',
-	"location":'Richardson, Texas',
-	"from":2016,
-	"to":2018,
-	"logo":"dist/img/resume_logos/round/utd_round.png"
-},],
+	"schoolname":'Peking University',
+	"subdivision":'College of Chemistry and Molecular Engineering',
+	"degreetype":"Bachelor's",
+	"major":'Applied Chemistry',
+	"location":'Beijing, China',
+	"from":2008,
+	"to":2012,
+	"logo":"dist/img/resume_logos/round/PKU_round.png"
+}],
 "Skills":[
 {'name':'Javascript','link':''},
 {'name':'CSS','link':''},
@@ -77,6 +77,16 @@ resumeData={
 	"experience":['Migrated multiple legacy databases (Oracle, SQL Server, Access) into redesigned data warehouse using SSIS and validated to ensure integrity',
 	'Wrote complex SQL queries and developed views, stored procedures and user-defined functions over large datasets (~100 GB)',
 	'Improved performance for expensive queries by different techniques, including indexing and caching']
+},
+{
+	"order":3,
+	"company":'ABCD Solutions',
+	"subdivision":'',
+	"position":'Data Analyst',
+	'location':'Richardson, Texas',
+	"from":'04/2016',
+	"to":'12/2016',
+	"experience":[]
 }
 ],
 "Project":[{
