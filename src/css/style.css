@@ -342,3 +342,11 @@ body{
 	left:-70px;
 	height: 60px;
 }
+
+.album-view img{
+	width:100%;
+}
+
+.album-view{
+	margin-bottom: 20px;
+}

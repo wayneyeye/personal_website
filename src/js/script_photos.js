@@ -244,25 +244,44 @@ $(function(){
 	var iSlide=new heroSlide({model: iHero});
 
 	// Collections for Albums
-	var Song = Backbone.Model.extend({
+	var placeholder_img='dist/img/placeholder/placeimg_640_480_arch.jpg';
+	// view foreach album
+	var Album_View = Backbone.View.extend({
+		tagName: 'div',
+		className: "album-view col-md-4",
+		initialize: function(){
+			this.div= $('.album-row');
+			this.div.append(this.render().el);
+		},
+		events:{
+
+		},
+		render: function(){
+			this.$el.html('<img src="'+this.model.get('cover_pic')+'"/>');
+			return this;
+		}
+	});
+
+	var Album_Model = Backbone.Model.extend({
 	  defaults: {
 	    name: "Not specified",
-	    artist: "Not specified"
+	    description: "Not specified",
+	    cover_pic:placeholder_img
 	  },
 	  initialize: function(){
-	      console.log("Music is the answer");
+	  	console.log("initialize Album: "+this.get('name'));
+	  	this.view=new Album_View({model:this});
 	  }
 	});
 
-	var Album = Backbone.Collection.extend({
-	  model: Song
+	var Album_Collection = Backbone.Collection.extend({
+	  model: Album_Model
 	});
 
-	var song1 = new Song({ name: "How Bizarre", artist: "OMC" });
-	var song2 = new Song({ name: "Sexual Healing", artist: "Marvin Gaye" });
-	var song3 = new Song({ name: "Talk It Over In Bed", artist: "OMC" });
-
-	var myAlbum = new Album([ song1, song2, song3]);
-
+	var Album1=new Album_Model();
+	var Album2=new Album_Model();
+	var Album3=new Album_Model();
+	var Album4=new Album_Model();
+	var myAlbum = new Album_Collection([Album1,Album2,Album3,Album4,]);
 
 });
