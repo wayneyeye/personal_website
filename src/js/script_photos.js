@@ -248,7 +248,7 @@ $(function(){
 	// view foreach album
 	var Album_View = Backbone.View.extend({
 		tagName: 'div',
-		className: "album-view col-md-4",
+		className: "album-view col-md-6",
 		initialize: function(){
 			this.div= $('.album-row');
 			this.div.append(this.render().el);
