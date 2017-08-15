@@ -298,6 +298,52 @@ $(function(){
 	});
 	var iHero=new heroSlidesShow();
 	var iSlide=new heroSlide({model: iHero});
+//*************************Featured Projects****************************************
+	// Collections for Projects
+	var placeholder_img='dist/img/placeholder/placeimg_640_480_arch.jpg';
+	// view foreach album
+	var Album_View = Backbone.View.extend({
+		tagName: 'div',
+		className: "album-view col-md-6",
+		initialize: function(){
+			this.div= $('.portfolio-row');
+			this.div.append(this.render().el);
+		},
+		events:{
+
+		},
+		render: function(){
+			this.$el.html('<img src="'+this.model.get('cover_pic')+'"/>'+'<a href="#">'+
+				this.model.get('name')+'</a>');
+			return this;
+		}
+	});
+
+	var Album_Model = Backbone.Model.extend({
+	  defaults: {
+	    name: "Not specified",
+	    description: "Not specified",
+	    cover_pic:placeholder_img
+	  },
+	  initialize: function(){
+	  	console.log("initialize Album: "+this.get('name'));
+	  	this.view=new Album_View({model:this});
+	  }
+	});
+
+	var Album_Collection = Backbone.Collection.extend({
+	  model: Album_Model
+	});
+
+	var Album1=new Album_Model();
+	var Album2=new Album_Model();
+	var Album3=new Album_Model();
+	var Album4=new Album_Model();
+	var myAlbum = new Album_Collection([Album1,Album2,Album3,Album4,]);
+
+
+
+
 //*************************Useful Links Below****************************************
 	// JSON for saving external links
 	var usefulLinks=[
