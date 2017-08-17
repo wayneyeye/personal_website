@@ -345,6 +345,13 @@ body{
 
 .album-view img{
 	width:100%;
+	margin-top:10px;
+	margin-bottom: 5px;
+}
+
+.album-view a{
+	text-align: center;
+	display: block;
 }
 
 .album-view{

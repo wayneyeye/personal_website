@@ -299,6 +299,30 @@ $(function(){
 	var iHero=new heroSlidesShow();
 	var iSlide=new heroSlide({model: iHero});
 //*************************Featured Projects****************************************
+	var Album_json={cat:{
+	img:'dist/img/placeholder/placeimg_640_480_animals.jpg',
+	desc:'meow'
+	},
+	street:{
+	img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
+	desc:'wonderful!'
+	},
+	building:{
+	img:'dist/img/placeholder/placeimg_640_480_arch2.jpg',
+	desc:'delicate'
+	},
+	bird:{
+	img:'dist/img/placeholder/placeimg_640_480_grayscale_animals.jpg',
+	desc:'pigeons'
+	},
+	valley:{
+	img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
+	desc:'splendid'
+	},
+	rainbow:{
+	img:'dist/img/placeholder/placeimg_640_480_grayscale_nature.jpg',
+	desc:'cool'
+	}};
 	// Collections for Projects
 	var placeholder_img='dist/img/placeholder/placeimg_640_480_arch.jpg';
 	// view foreach album
@@ -326,7 +350,7 @@ $(function(){
 	    cover_pic:placeholder_img
 	  },
 	  initialize: function(){
-	  	console.log("initialize Album: "+this.get('name'));
+	  	// console.log("initialize Album: "+this.get('name'));
 	  	this.view=new Album_View({model:this});
 	  }
 	});
@@ -335,11 +359,12 @@ $(function(){
 	  model: Album_Model
 	});
 
-	var Album1=new Album_Model();
-	var Album2=new Album_Model();
-	var Album3=new Album_Model();
-	var Album4=new Album_Model();
-	var myAlbum = new Album_Collection([Album1,Album2,Album3,Album4,]);
+	var Album_names=['cat','bird','valley','building'];
+	var Album_list=[];
+	var myAlbum = new Album_Collection();
+	Album_names.forEach(function(item){
+		myAlbum.add(new Album_Model({cover_pic:Album_json[item].img,name:item}));
+	});
 
 
 
