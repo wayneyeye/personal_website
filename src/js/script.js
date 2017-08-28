@@ -301,27 +301,33 @@ $(function(){
 //*************************Featured Projects****************************************
 	var Album_json={cat:{
 	img:'dist/img/placeholder/placeimg_640_480_animals.jpg',
-	desc:'meow'
+	title:'meow',
+	url:"#",
 	},
 	street:{
 	img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
-	desc:'wonderful!'
+	title:'wonderful!',
+	url:"#",
 	},
 	building:{
 	img:'dist/img/placeholder/placeimg_640_480_arch2.jpg',
-	desc:'delicate'
+	title:'delicate',
+	url:"#",
 	},
 	bird:{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_animals.jpg',
-	desc:'pigeons'
+	title:'pigeons',
+	url:"#",
 	},
 	valley:{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
-	desc:'splendid'
+	title:'splendid',
+	url:"#",
 	},
 	rainbow:{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_nature.jpg',
-	desc:'cool'
+	title:'cool',
+	url:"#",
 	}};
 	// Collections for Projects
 	var placeholder_img='dist/img/placeholder/placeimg_640_480_arch.jpg';
@@ -337,17 +343,18 @@ $(function(){
 
 		},
 		render: function(){
-			this.$el.html('<div class="album-img-div"><img src="'+this.model.get('cover_pic')+'"/>'+'<div class="album-desc"></div></div>'+'<a href="#">'+
-				this.model.get('name')+'</a>');
+			this.$el.html('<div class="album-img-div"><img src="'+this.model.get('cover_pic')+'"/>'+'<div class="album-desc">'+'<a href="'+this.model.get('url')+'">'+
+				this.model.get('title')+'</a><p>move here for more information</p></div></div>');
 			return this;
 		}
 	});
 
 	var Album_Model = Backbone.Model.extend({
 	  defaults: {
-	    name: "Not specified",
+	    title: "Not specified",
 	    description: "Not specified",
-	    cover_pic:placeholder_img
+	    cover_pic:placeholder_img,
+	    url:'#'
 	  },
 	  initialize: function(){
 	  	// console.log("initialize Album: "+this.get('name'));
@@ -363,7 +370,7 @@ $(function(){
 	var Album_list=[];
 	var myAlbum = new Album_Collection();
 	Album_names.forEach(function(item){
-		myAlbum.add(new Album_Model({cover_pic:Album_json[item].img,name:item}));
+		myAlbum.add(new Album_Model({cover_pic:Album_json[item].img,title:Album_json[item].title,url:Album_json[item].url}));
 	});
 
 

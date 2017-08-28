@@ -369,12 +369,24 @@ body{
 .album-desc{
 	position: absolute;
 	width:100%;
-	bottom: -20%;
+	bottom: -18%;
 	background-color: black;
-	opacity: 0.3;
+	opacity: 0.5;
 	height: 30%;
 	left:0;	
 	overflow: hidden;
+
+}
+.album-desc a{
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.album-desc p{
+	opacity: 0.9;
+	color: yellow;
+	white-space: nowrap;
+	display: inline-block;
 }
 
 .album-desc:hover{
