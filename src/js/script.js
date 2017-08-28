@@ -337,7 +337,7 @@ $(function(){
 
 		},
 		render: function(){
-			this.$el.html('<img src="'+this.model.get('cover_pic')+'"/>'+'<a href="#">'+
+			this.$el.html('<div class="album-img-div"><img src="'+this.model.get('cover_pic')+'"/>'+'<div class="album-desc"></div></div>'+'<a href="#">'+
 				this.model.get('name')+'</a>');
 			return this;
 		}

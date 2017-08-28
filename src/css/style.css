@@ -346,7 +346,8 @@ body{
 .album-view img{
 	width:100%;
 	margin-top:10px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
+	position: relative;
 }
 
 .album-view a{
@@ -356,4 +357,29 @@ body{
 
 .album-view{
 	margin-bottom: 20px;
+}
+
+.album-img-div{
+	width:100%;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.album-desc{
+	position: absolute;
+	width:100%;
+	bottom: -20%;
+	background-color: black;
+	opacity: 0.3;
+	height: 30%;
+	left:0;	
+	overflow: hidden;
+}
+
+.album-desc:hover{
+	bottom: 0;
+	opacity: 0.8;
+	transition-property: bottom, opacity;
+    transition-duration: 0.3s, 1s;
 }
