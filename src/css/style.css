@@ -369,7 +369,7 @@ body{
 .album-desc{
 	position: absolute;
 	width:100%;
-	bottom: -18%;
+	bottom: -15%;
 	background-color: black;
 	opacity: 0.5;
 	height: 30%;
@@ -378,20 +378,29 @@ body{
 
 }
 .album-desc a{
+	opacity: 1;
 	white-space: nowrap;
 	display: inline-block;
+	font-size: 1.5em;
+	color: yellow;
 }
 
 .album-desc p{
 	opacity: 0.9;
-	color: yellow;
-	white-space: nowrap;
+	color: orange;
 	display: inline-block;
+	font-size: 0.8em;
 }
 
 .album-desc:hover{
 	bottom: 0;
 	opacity: 0.8;
+	transition-property: bottom, opacity;
+    transition-duration: 0.3s, 1s;
+}
+
+.album-desc:hover p{
+	opacity: 0;
 	transition-property: bottom, opacity;
     transition-duration: 0.3s, 1s;
 }

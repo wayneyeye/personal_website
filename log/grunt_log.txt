@@ -2207,3 +2207,99 @@ Running "cssmin:build" (cssmin) task
 
 Done.
 Completed in 0.841s at Mon Aug 28 2017 15:39:24 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.93 kB → 4.92 kB
+
+Done.
+Completed in 1.917s at Mon Aug 28 2017 15:52:02 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.95 kB → 4.93 kB
+
+Done.
+Completed in 0.980s at Mon Aug 28 2017 15:52:10 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.9 kB → 4.89 kB
+
+Done.
+Completed in 0.907s at Mon Aug 28 2017 15:53:36 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.88 kB → 4.88 kB
+
+Done.
+Completed in 0.895s at Mon Aug 28 2017 15:53:57 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.88 kB → 4.88 kB
+
+Done.
+Completed in 0.997s at Mon Aug 28 2017 15:54:05 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.9 kB → 4.89 kB
+
+Done.
+Completed in 0.914s at Mon Aug 28 2017 15:54:18 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.93 kB → 4.91 kB
+
+Done.
+Completed in 0.813s at Mon Aug 28 2017 15:55:04 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.94 kB → 4.92 kB
+
+Done.
+Completed in 0.808s at Mon Aug 28 2017 15:55:39 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.96 kB → 4.93 kB
+
+Done.
+Completed in 0.815s at Mon Aug 28 2017 15:55:53 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.96 kB → 4.93 kB
+
+Done.
+Completed in 0.831s at Mon Aug 28 2017 15:56:12 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.96 kB → 4.93 kB
+
+Done.
+Completed in 0.810s at Mon Aug 28 2017 15:56:39 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.96 kB → 4.93 kB
+
+Done.
+Completed in 0.814s at Mon Aug 28 2017 15:57:09 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.05 kB → 5.01 kB
+
+Done.
+Completed in 0.803s at Mon Aug 28 2017 15:58:18 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.05 kB → 5.01 kB
+
+Done.
+Completed in 0.834s at Mon Aug 28 2017 15:58:33 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 5.99 kB → 4.96 kB
+
+Done.
+Completed in 0.816s at Mon Aug 28 2017 15:58:36 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.07 kB → 5.03 kB
+
+Done.
+Completed in 0.819s at Mon Aug 28 2017 16:00:06 GMT-0500 (CDT) - Waiting...
