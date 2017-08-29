@@ -369,15 +369,15 @@ body{
 .album-desc{
 	position: absolute;
 	width:100%;
-	bottom: -15%;
+	bottom: -20%;
 	background-color: black;
 	opacity: 0.0;
-	height: 30%;
+	height: 35%;
 	left:0;	
 	overflow: hidden;
 
 }
-.album-desc a{
+.album-title-url{
 	opacity: 1;
 	white-space: nowrap;
 	display: inline-block;
@@ -393,21 +393,42 @@ body{
 	font-size: 0.9em;
 }
 
-.album-desc:hover{
-	bottom: 0;
-	opacity: 0.8;
+.album-x-url{
+	color:#c7c7fb;
+	font-size: 0.8em;
+}
+
+.album-view:hover .album-desc{
+	opacity: 0.6;
 	transition-property: bottom, opacity;
     transition-duration: 0.3s, 1s;
 }
 
-.album-view:hover .album-desc{
-	opacity: 0.8;
+.album-desc:hover{
+	bottom: 0;
+	opacity: 0.9;
 	transition-property: bottom, opacity;
     transition-duration: 0.3s, 1s;
 }
 
 .album-desc:hover p{
+	display: none;
+	transition-property: left, opacity;
+    transition-duration: 0.7s, 1s;
+}
+
+.album-desc:hover span{
+	opacity:  1;
+	transition-property: left, opacity;
+    transition-duration: 0.7s, 1s;
+}
+
+.album-desc span{
+	margin-left: 10px;
+	display: block;
 	opacity: 0;
-	transition-property: bottom, opacity;
-    transition-duration: 0.3s, 1s;
+	color: white;
+	font-size: 0.9em;
+	padding-left: 5px;
+	padding-right: 5px;
 }
