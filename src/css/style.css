@@ -371,7 +371,7 @@ body{
 	width:100%;
 	bottom: -15%;
 	background-color: black;
-	opacity: 0.5;
+	opacity: 0.0;
 	height: 30%;
 	left:0;	
 	overflow: hidden;
@@ -386,14 +386,21 @@ body{
 }
 
 .album-desc p{
+	margin-left: 10px;
 	opacity: 0.9;
 	color: orange;
 	display: inline-block;
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 
 .album-desc:hover{
 	bottom: 0;
+	opacity: 0.8;
+	transition-property: bottom, opacity;
+    transition-duration: 0.3s, 1s;
+}
+
+.album-view:hover .album-desc{
 	opacity: 0.8;
 	transition-property: bottom, opacity;
     transition-duration: 0.3s, 1s;
