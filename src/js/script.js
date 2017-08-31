@@ -13,13 +13,13 @@ $(function(){
 	});
 //Sidebar contents
 	var sideBarInfo={
-		introText:'Hi, My name is <strong>Wenhe Ye</strong>...</p><p>My current location is <strong>Dallas, TX</strong> \n Excellent communication and research skills; Good leadership skills; Excellent problem-solving skills; Highly initiative and detail-oriented. Good information & data retrieval skills in both business and science; Good knowledge in finance and operations process; Hands-on experience in both operations research and chemical engineering.Advanced skill set in data analysis and data modeling; In-depth expertise in programming simulation and optimization; Proficiency in developing data science & optimization products and trouble shooting.',
+		introText:'Hi, My name is <strong>Wenhe Ye</strong>...</span><span>My current location is <strong>Dallas, TX</strong>.  Excellent communication and research skills; Good leadership skills; Excellent problem-solving skills; Highly initiative and detail-oriented. Good information & data retrieval skills in both business and science; Good knowledge in finance and operations process; Hands-on experience in both operations research and chemical engineering. Advanced skill set in data analysis and data modeling; In-depth expertise in programming simulation and optimization; Proficiency in developing data science & optimization products and trouble shooting.',
 		interestList:[{name:'DataScience', url:'#', desc:'DA'},{name:'Programming', url:'#', desc:'Dev'}]
 	};
 	var sideBarHeader ='<div class="row side-bar-title"><div class="col-xs-9"><h4>About Me</h4></div></div><div class="row side-bar-potrait"><div class="col-md-12"><img src="img/Wenhe.jpg" id="potrait-img"/></div></div>';
-	var sideBarContent1 ='<div class="row side-bar-content"><div class="col-md-12"><p>';
+	var sideBarContent1 ='<div class="row side-bar-content"><div class="col-md-12"><span>';
 	var introText=sideBarInfo.introText;
-	var sideBarContent2 ='</p></div></div><div class="row side-bar-subtitle"><div class="col-md-12"><h5>Interests</h5></div></div><div class="row side-bar-sublist"><div class="col-md-12"><ul>';
+	var sideBarContent2 ='</span></div></div><div class="row side-bar-subtitle"><div class="col-md-12"><h5>Interests</h5></div></div><div class="row side-bar-sublist"><div class="col-md-12"><ul>';
 	var interestList='';
 	for (var k=0;k<sideBarInfo.interestList.length;k++){
 		interestList+='<li><a href="'+sideBarInfo.interestList[k].url+'">'+sideBarInfo.interestList[k].name+'</a>'+'</li>';		

@@ -198,6 +198,16 @@ body{
     box-shadow: 4px 1px 20px 0px #ccc;
     text-align: justify;
 }
+.side-bar span{
+	font-size: 0.9em;
+	line-height: 0.4;
+	padding: 0px 5px 0px 5px;
+}
+
+.side-bar div{
+	margin-bottom: 5px;
+}
+
 .hide{
 	opacity:0.3;
 	left:-400px;	
