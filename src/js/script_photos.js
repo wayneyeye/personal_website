@@ -244,55 +244,71 @@ $(function(){
 	var iSlide=new heroSlide({model: iHero});
 
 	// Collections for Albums
+	//*************************Featured Projects****************************************
 	var Album_json={cat:{
 	img:'dist/img/placeholder/placeimg_640_480_animals.jpg',
-	desc:'meow'
+	title:'meow',
+	url:"#",
+	desc:"Our plans include unlimited texting, calling, and data, starting as low as $13.99 per month with no contracts."
 	},
 	street:{
 	img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
-	desc:'wonderful!'
+	title:'wonderful!',
+	url:"#",
+	desc:"This is a description"
 	},
 	building:{
 	img:'dist/img/placeholder/placeimg_640_480_arch2.jpg',
-	desc:'delicate'
+	title:'delicate',
+	url:"#",
+	desc:"This is a description"
 	},
 	bird:{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_animals.jpg',
-	desc:'pigeons'
+	title:'pigeons',
+	url:"#",
+	desc:"This is a description"
 	},
 	valley:{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
-	desc:'splendid'
+	title:'splendid',
+	url:"#",
+	desc:"This is a description"
 	},
 	rainbow:{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_nature.jpg',
-	desc:'cool'
+	title:'cool',
+	url:"#",
+	desc:"This is a description"
 	}};
-
+	// Collections for Projects
 	var placeholder_img='dist/img/placeholder/placeimg_640_480_arch.jpg';
 	// view foreach album
 	var Album_View = Backbone.View.extend({
 		tagName: 'div',
 		className: "album-view col-md-6",
 		initialize: function(){
-			this.div= $('.album-row');
+			this.div= $('.portfolio-row');
 			this.div.append(this.render().el);
 		},
 		events:{
 
 		},
 		render: function(){
-			this.$el.html('<img src="'+this.model.get('cover_pic')+'"/>'+'<a href="#">'+
-				this.model.get('name')+'</a>');
+			this.$el.html('<div class="album-img-div"><img src="'+this.model.get('cover_pic')+'"/>'+'<div class="album-desc">'+'<a class="album-title-url" href="'+this.model.get('url')+'">'+
+				this.model.get('title')+'</a><p>move here for more information</p>'+
+				'<span>'+this.model.get('desc')+'</span>'+'<a class="album-x-url" href="'+this.model.get('url')+'">'+
+				'click here for more'+'</a>'+'</div></div>');
 			return this;
 		}
 	});
 
 	var Album_Model = Backbone.Model.extend({
 	  defaults: {
-	    name: "Not specified",
+	    title: "Not specified",
 	    description: "Not specified",
-	    cover_pic:placeholder_img
+	    cover_pic:placeholder_img,
+	    url:'#'
 	  },
 	  initialize: function(){
 	  	// console.log("initialize Album: "+this.get('name'));
@@ -304,10 +320,10 @@ $(function(){
 	  model: Album_Model
 	});
 
-	var Album_names=['valley','rainbow','street','building'];
+	var Album_names=['rainbow','street','valley','bird'];
 	var Album_list=[];
 	var myAlbum = new Album_Collection();
 	Album_names.forEach(function(item){
-		myAlbum.add(new Album_Model({cover_pic:Album_json[item].img,name:item}));
+		myAlbum.add(new Album_Model({cover_pic:Album_json[item].img,title:Album_json[item].title,url:Album_json[item].url,desc:Album_json[item].desc}));
 	});
 });
