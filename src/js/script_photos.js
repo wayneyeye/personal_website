@@ -1,54 +1,54 @@
 $(function(){
 //*************************Featured Stories Slide Show****************************************
-	var heroImgs=[{
+var heroImgs=[{
 	img:'dist/img/placeholder/placeimg_640_480_animals.jpg',
 	desc:'meow'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
 	desc:'wonderful!'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_arch2.jpg',
 	desc:'delicate'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_animals.jpg',
 	desc:'pigeons'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
 	desc:'splendid'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_nature.jpg',
 	desc:'cool'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_grayscale_people.jpg',
 	desc:'woo!'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_nature.jpg',
 	desc:'awesome'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_people.png',
 	desc:'nice'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_sepia_any.jpg',
 	desc:'hardworking'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_sepia_tech.jpg',
 	desc:'smartphone'
-	},
-	{
+},
+{
 	img:'dist/img/placeholder/placeimg_640_480_tech.jpg',
 	desc:'smart cellphone'
-	}
-	];
+}
+];
 
 	//Preload image to speed up
 	var preload = new Image();
@@ -64,9 +64,9 @@ $(function(){
 		$(".hero-slide").addClass("load-success");
 	}
 	//Backbone model for slides
-		var heroSlidesShow = Backbone.Model.extend({
-			defaults:{
-				max: heroImgs.length,
+	var heroSlidesShow = Backbone.Model.extend({
+		defaults:{
+			max: heroImgs.length,
 				index: 0, //index to img
 				index_left:heroImgs.length-1,
 				index_right:1,
@@ -116,21 +116,21 @@ $(function(){
 				{
 					$(".hero-right-arrow").click();
 					this.set("trigger",setInterval(function() {
-							$(".hero-right-arrow").click();
+						$(".hero-right-arrow").click();
 					}, 8000));
 				}
 				this.set("play",!this.get("play"));
 			}
 		});
 //backbone view for hero image
-	var heroSlide = Backbone.View.extend({
-		tagName: 'div',
-		className: "hero-banner",
-		initialize: function(){
-			primerHTML='<div class="row hero-row"><div class="col-md-12 hero"></div></div>';
-			$('.hero-slide').append(primerHTML);
-			this.slide= $('.hero');
-			this.listenTo(iHero, 'change', this.render);
+var heroSlide = Backbone.View.extend({
+	tagName: 'div',
+	className: "hero-banner",
+	initialize: function(){
+		primerHTML='<div class="row hero-row"><div class="col-md-12 hero"></div></div>';
+		$('.hero-slide').append(primerHTML);
+		this.slide= $('.hero');
+		this.listenTo(iHero, 'change', this.render);
 			// adding html
 			heroLeadingHTML='<img class="img-hero-half" src="';
 			heroTrailingHTML='"/>';
@@ -147,8 +147,8 @@ $(function(){
 			//carousel
 			this.model.set("trigger",setInterval(function() {
 				$(".hero-right-arrow").click();
-				}, 8000));
-			},
+			}, 8000));
+		},
 		render: function(){
 			// Create the HTML
 			var index=this.model.get("index")+2;
@@ -178,108 +178,128 @@ $(function(){
 			return this;
 		}
 	});
-	var heroArrowLeft = Backbone.View.extend({
-		tagName: 'div',
-		className: "hero-left-arrow",
-		initialize: function(){
-			this.div= $('.hero-banner');
-			this.div.append(this.render().el);
-		},
-		events:{
-			'click': 'toggleSlides'
-		},
-		render: function(){
-			this.$el.html('<img src="img/icons/left.png" />');
-			return this;
-		},
-		toggleSlides: function(){
-			this.model.oneBack();
+var heroArrowLeft = Backbone.View.extend({
+	tagName: 'div',
+	className: "hero-left-arrow",
+	initialize: function(){
+		this.div= $('.hero-banner');
+		this.div.append(this.render().el);
+	},
+	events:{
+		'click': 'toggleSlides'
+	},
+	render: function(){
+		this.$el.html('<img src="img/icons/left.png" />');
+		return this;
+	},
+	toggleSlides: function(){
+		this.model.oneBack();
 			// reset timer
 			// this.model.pausePlay();
 			// this.model.pausePlay();
 		}
 	});
-	
-	var heroPausePlay = Backbone.View.extend({
-		tagName: 'div',
-		className: "hero-pause-play",
-		initialize: function(){
-			this.div= $('.hero-banner');
-			this.div.append(this.render().el);
-		},
-		events:{
-			'click': 'toggleSlides'
-		},
-		render: function(){
-			this.$el.html(this.model.get('icon'));
-			return this;
-		},
-		toggleSlides: function(){
-			this.model.pausePlay();
-		}
-	});
-	
-	var heroArrowRight = Backbone.View.extend({
-		tagName: 'div',
-		className: "hero-right-arrow",
-		initialize: function(){
-			this.div= $('.hero-banner');
-			this.div.append(this.render().el);
-		},
-		events:{
-			'click': 'toggleSlides'
-		},
-		render: function(){
-			this.$el.html('<img src="img/icons/right.png" />');
-			return this;
-		},
-		toggleSlides: function(){
-			this.model.oneNext();
+
+var heroPausePlay = Backbone.View.extend({
+	tagName: 'div',
+	className: "hero-pause-play",
+	initialize: function(){
+		this.div= $('.hero-banner');
+		this.div.append(this.render().el);
+	},
+	events:{
+		'click': 'toggleSlides'
+	},
+	render: function(){
+		this.$el.html(this.model.get('icon'));
+		return this;
+	},
+	toggleSlides: function(){
+		this.model.pausePlay();
+	}
+});
+
+var heroArrowRight = Backbone.View.extend({
+	tagName: 'div',
+	className: "hero-right-arrow",
+	initialize: function(){
+		this.div= $('.hero-banner');
+		this.div.append(this.render().el);
+	},
+	events:{
+		'click': 'toggleSlides'
+	},
+	render: function(){
+		this.$el.html('<img src="img/icons/right.png" />');
+		return this;
+	},
+	toggleSlides: function(){
+		this.model.oneNext();
 			// reset timer
 			// this.model.pausePlay();
 			// this.model.pausePlay();
 		}
 	});
-	var iHero=new heroSlidesShow();
-	var iSlide=new heroSlide({model: iHero});
+var iHero=new heroSlidesShow();
+var iSlide=new heroSlide({model: iHero});
 
 	// Collections for Albums
 	//*************************Featured Projects****************************************
 	var Album_json={cat:{
-	img:'dist/img/placeholder/placeimg_640_480_animals.jpg',
-	title:'meow',
-	url:"#",
-	desc:"Our plans include unlimited texting, calling, and data, starting as low as $13.99 per month with no contracts."
+		title:'meow',
+		url:"#",
+		img_list:{
+			img:'dist/img/placeholder/placeimg_640_480_animals.jpg',
+			desc:"Our plans include unlimited texting, calling, and data, starting as low as $13.99 per month with no contracts."
+		}
 	},
 	street:{
-	img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
-	title:'wonderful!',
-	url:"#",
-	desc:"This is a description"
+		title:'wonderful!',
+		url:"#",
+		img_list:[{
+			img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
+			desc:"This is a description"
+		}]
 	},
 	building:{
-	img:'dist/img/placeholder/placeimg_640_480_arch2.jpg',
-	title:'delicate',
-	url:"#",
-	desc:"This is a description"
+		title:'delicate',
+		url:"#",
+		img_list:[{
+			img:'dist/img/placeholder/placeimg_640_480_arch2.jpg',
+			desc:"This is a description"
+		},
+		{
+			img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
+			desc:"This is a description"
+		},
+		{
+			img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
+			desc:"This is a description"
+		}]
 	},
 	bird:{
-	img:'dist/img/placeholder/placeimg_640_480_grayscale_animals.jpg',
-	title:'pigeons',
-	url:"#",
-	desc:"This is a description"
+		title:'pigeons',
+		url:"#",
+		img_list:[{
+			img:'dist/img/placeholder/placeimg_640_480_grayscale_animals.jpg',
+			desc:"This is a description"
+		}]
 	},
 	valley:{
-	img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
-	title:'splendid',
-	url:"#",
-	desc:"This is a description"
+		title:'splendid',
+		url:"#",
+		img_list:[{
+			img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
+			desc:"This is a description"
+		}]
 	},
 	rainbow:{
-	img:'dist/img/placeholder/placeimg_640_480_grayscale_nature.jpg',
-	title:'cool',
-	url:"#",
-	desc:"This is a description"
+		title:'cool',
+		url:"#",
+		img_list:[{
+			img:'dist/img/placeholder/placeimg_640_480_grayscale_nature.jpg',
+			desc:"This is a description"
+		}]
 	}};
 	// Collections for Projects
 	var placeholder_img='dist/img/placeholder/placeimg_640_480_arch.jpg';
@@ -290,6 +310,7 @@ $(function(){
 		initialize: function(){
 			this.div= $('.portfolio-row');
 			this.div.append(this.render().el);
+			this.listenTo(this.model, 'change', this.render);
 		},
 		events:{
 
@@ -299,31 +320,84 @@ $(function(){
 				this.model.get('title')+'</a><p>move here for more information</p>'+
 				'<span>'+this.model.get('desc')+'</span>'+'<a class="album-x-url" href="'+this.model.get('url')+'">'+
 				'click here for more'+'</a>'+'</div></div>');
+		  	this.leftArrow=new albumArrowLeft({model:this.model});
+		  	this.righttArrow=new albumArrowRight({model:this.model});
 			return this;
 		}
 	});
 
 	var Album_Model = Backbone.Model.extend({
-	  defaults: {
-	    title: "Not specified",
-	    description: "Not specified",
-	    cover_pic:placeholder_img,
-	    url:'#'
-	  },
-	  initialize: function(){
+		defaults: {
+			title: "Not specified",
+			description: "Not specified",
+			current_index:0,
+			cover_pic:placeholder_img,
+			url:'#'
+		},
+	   initialize: function(){
 	  	// console.log("initialize Album: "+this.get('name'));
 	  	this.view=new Album_View({model:this});
+	  },
+	  oneNext: function(){
+	  	var current_index_t=this.get("current_index");
+	  	this.set("current_index",1+current_index_t);
+	  	if (this.get("current_index")>=this.get("img_list").length){
+	  		this.set("current_index",0);
+	  	}
+	  	img_t=this.get("img_list")[this.get("current_index")];
+	  	this.set("cover_pic",img_t.img);
+	  	this.set("desc",img_t.desc);
+	  	console.log(this.get("cover_pic"));
 	  }
+
+	});
+
+	var albumArrowLeft = Backbone.View.extend({
+		tagName: 'div',
+		className: "album-arrow-left",
+		initialize: function(){
+			this.div= $('.album-desc:last');
+			this.div.append(this.render().el);
+		},
+		events:{
+			'click': 'toggleSlides'
+		},
+		render: function(){
+			this.$el.html('<img src="img/icons/left.png"/>');
+			return this;
+		},
+		toggleSlides: function(){
+			this.model.oneBack();
+		}
+	});
+
+	var albumArrowRight = Backbone.View.extend({
+		tagName: 'div',
+		className: "album-arrow-right",
+		initialize: function(){
+			this.div= $('.album-desc:last');
+			this.div.append(this.render().el);
+		},
+		events:{
+			'click': 'toggleSlides'
+		},
+		render: function(){
+			this.$el.html('<img src="img/icons/right.png"/>');
+			return this;
+		},
+		toggleSlides: function(){
+			this.model.oneNext();
+		}
 	});
 
 	var Album_Collection = Backbone.Collection.extend({
-	  model: Album_Model
+		model: Album_Model
 	});
 
-	var Album_names=['rainbow','street','valley','bird'];
+	var Album_names=['rainbow','street','valley','building'];
 	var Album_list=[];
 	var myAlbum = new Album_Collection();
 	Album_names.forEach(function(item){
-		myAlbum.add(new Album_Model({cover_pic:Album_json[item].img,title:Album_json[item].title,url:Album_json[item].url,desc:Album_json[item].desc}));
+		myAlbum.add(new Album_Model({img_list:Album_json[item].img_list,cover_pic:Album_json[item].img_list[0].img,title:Album_json[item].title,url:Album_json[item].url,desc:Album_json[item].img_list[0].desc}));
 	});
 });
