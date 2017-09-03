@@ -313,16 +313,21 @@ var iSlide=new heroSlide({model: iHero});
 			this.listenTo(this.model, 'change', this.render);
 		},
 		events:{
-
+			'click .album-arrow-right': 'oneNext',
+			'click .album-arrow-left': 'oneBack'
 		},
 		render: function(){
 			this.$el.html('<div class="album-img-div"><img src="'+this.model.get('cover_pic')+'"/>'+'<div class="album-desc">'+'<a class="album-title-url" href="'+this.model.get('url')+'">'+
 				this.model.get('title')+'</a><p>move here for more information</p>'+
 				'<span>'+this.model.get('desc')+'</span>'+'<a class="album-x-url" href="'+this.model.get('url')+'">'+
-				'click here for more'+'</a>'+'</div></div>');
-		  	this.leftArrow=new albumArrowLeft({model:this.model});
-		  	this.righttArrow=new albumArrowRight({model:this.model});
+				'click here for more'+'</a>'+'<div class="album-arrow-left"><img src="img/icons/left.png"/></div>'+'<div class="album-arrow-right"><img src="img/icons/right.png"/></div>'+'</div></div>');
 			return this;
+		},
+		oneNext: function(){
+			this.model.oneNext();
+		},
+		oneBack: function(){
+			this.model.oneBack();
 		}
 	});
 
@@ -334,9 +339,12 @@ var iSlide=new heroSlide({model: iHero});
 			cover_pic:placeholder_img,
 			url:'#'
 		},
-	   initialize: function(){
+		initialize: function(){
 	  	// console.log("initialize Album: "+this.get('name'));
 	  	this.view=new Album_View({model:this});
+	  },
+	  events:{
+	  	
 	  },
 	  oneNext: function(){
 	  	var current_index_t=this.get("current_index");
@@ -347,47 +355,20 @@ var iSlide=new heroSlide({model: iHero});
 	  	img_t=this.get("img_list")[this.get("current_index")];
 	  	this.set("cover_pic",img_t.img);
 	  	this.set("desc",img_t.desc);
-	  	console.log(this.get("cover_pic"));
+	  	// console.log(this.get("cover_pic"));
+	  },
+	  oneBack: function(){
+	  	var current_index_t=this.get("current_index");
+	  	this.set("current_index",current_index_t-1);
+	  	if (this.get("current_index")<0){
+	  		this.set("current_index",(this.get("img_list").length-1));
+	  	}
+	  	img_t=this.get("img_list")[this.get("current_index")];
+	  	this.set("cover_pic",img_t.img);
+	  	this.set("desc",img_t.desc);
+	  	// console.log(this.get("cover_pic"));
 	  }
 
-	});
-
-	var albumArrowLeft = Backbone.View.extend({
-		tagName: 'div',
-		className: "album-arrow-left",
-		initialize: function(){
-			this.div= $('.album-desc:last');
-			this.div.append(this.render().el);
-		},
-		events:{
-			'click': 'toggleSlides'
-		},
-		render: function(){
-			this.$el.html('<img src="img/icons/left.png"/>');
-			return this;
-		},
-		toggleSlides: function(){
-			this.model.oneBack();
-		}
-	});
-
-	var albumArrowRight = Backbone.View.extend({
-		tagName: 'div',
-		className: "album-arrow-right",
-		initialize: function(){
-			this.div= $('.album-desc:last');
-			this.div.append(this.render().el);
-		},
-		events:{
-			'click': 'toggleSlides'
-		},
-		render: function(){
-			this.$el.html('<img src="img/icons/right.png"/>');
-			return this;
-		},
-		toggleSlides: function(){
-			this.model.oneNext();
-		}
 	});
 
 	var Album_Collection = Backbone.Collection.extend({

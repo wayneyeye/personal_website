@@ -407,14 +407,14 @@ body{
 	position: absolute;
 	width:30px;
 	left:0;
-	top:30%;
+	bottm:0;
 }
 
 .album-arrow-right{
 	position: absolute;
 	width:30px;
 	right:0;
-	top:30%;
+	bottm:0;
 }
 
 .album-x-url{
@@ -432,7 +432,7 @@ body{
 	bottom: 0;
 	opacity: 0.9;
 	transition-property: bottom, opacity;
-    transition-duration: 0.3s, 1s;
+    transition-duration: 0.1s, 1s;
 }
 
 .album-desc:hover p{
