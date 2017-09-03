@@ -4144,3 +4144,33 @@ Running "cssmin:build" (cssmin) task
 
 Done.
 Completed in 0.831s at Sun Sep 03 2017 14:31:51 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.8 kB → 5.63 kB
+
+Done.
+Completed in 0.833s at Sun Sep 03 2017 14:34:17 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.8 kB → 5.63 kB
+
+Done.
+Completed in 0.817s at Sun Sep 03 2017 14:34:42 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.8 kB → 5.63 kB
+
+Done.
+Completed in 0.825s at Sun Sep 03 2017 14:34:54 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.8 kB → 5.63 kB
+
+Done.
+Completed in 0.821s at Sun Sep 03 2017 14:34:55 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.78 kB → 5.61 kB
+
+Done.
+Completed in 0.819s at Sun Sep 03 2017 14:35:39 GMT-0500 (CDT) - Waiting...

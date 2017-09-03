@@ -425,26 +425,26 @@ body{
 .album-view:hover .album-desc{
 	opacity: 0.6;
 	transition-property: bottom, opacity;
-    transition-duration: 0.3s, 1s;
+    transition-duration: 0.01s, 1s;
 }
 
 .album-desc:hover{
 	bottom: 0;
 	opacity: 0.9;
 	transition-property: bottom, opacity;
-    transition-duration: 0.1s, 1s;
+    transition-duration: 0.01s, 1s;
 }
 
 .album-desc:hover p{
 	display: none;
-	transition-property: left, opacity;
-    transition-duration: 0.7s, 1s;
+	transition-property: opacity;
+    transition-duration:  1s;
 }
 
 .album-desc:hover span{
 	opacity:  1;
-	transition-property: left, opacity;
-    transition-duration: 0.7s, 1s;
+	transition-property:  opacity;
+    transition-duration:  1s;
 }
 
 .album-desc span{
