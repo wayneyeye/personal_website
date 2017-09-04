@@ -240,6 +240,10 @@ $(function(){
 			return this;
 		}
 	});
+	//<div class="hero-left-arrow"><img src="img/icons/left.png" /></div>
+	//<div class="hero-right-arrow"><img src="img/icons/right.png" /></div>
+	//<div class="hero-pause-play"><img src="" /></div>
+
 	var heroArrowLeft = Backbone.View.extend({
 		tagName: 'div',
 		className: "hero-left-arrow",
