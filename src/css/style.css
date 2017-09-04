@@ -395,6 +395,10 @@ body{
 	color: yellow;
 }
 
+.album-desc a:hover{
+	color:yellow;
+}
+
 .album-desc p{
 	margin-left: 10px;
 	opacity: 0.9;

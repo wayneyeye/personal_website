@@ -4333,3 +4333,33 @@ File dist/js/script_resume.min.js created: 4.8 kB → 4.24 kB
 
 Done.
 Completed in 1.255s at Mon Sep 04 2017 10:12:10 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.84 kB → 5.66 kB
+
+Done.
+Completed in 0.826s at Mon Sep 04 2017 10:14:38 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.82 kB → 5.64 kB
+
+Done.
+Completed in 0.831s at Mon Sep 04 2017 10:15:11 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.84 kB → 5.66 kB
+
+Done.
+Completed in 0.834s at Mon Sep 04 2017 10:15:21 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.82 kB → 5.64 kB
+
+Done.
+Completed in 0.819s at Mon Sep 04 2017 10:15:29 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.82 kB → 5.64 kB
+
+Done.
+Completed in 0.822s at Mon Sep 04 2017 10:15:56 GMT-0500 (CDT) - Waiting...
