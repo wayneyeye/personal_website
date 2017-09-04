@@ -4202,3 +4202,106 @@ File dist/js/script_resume.min.js created: 4.8 kB → 4.24 kB
 
 Done.
 Completed in 1.278s at Mon Sep 04 2017 09:54:38 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+
+src/js/script.js
+  line 238  col 110  Missing semicolon.
+
+  ⚠  1 warning
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.096s at Mon Sep 04 2017 10:02:00 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.95 kB → 9.94 kB
+File dist/js/script_photos.min.js created: 11.37 kB → 7.73 kB
+File dist/js/script_resume.min.js created: 4.8 kB → 4.24 kB
+>> 3 files created.
+
+Done.
+Completed in 1.291s at Mon Sep 04 2017 10:02:24 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.94 kB → 9.93 kB
+File dist/js/script_photos.min.js created: 11.37 kB → 7.73 kB
+File dist/js/script_resume.min.js created: 4.8 kB → 4.24 kB
+>> 3 files created.
+
+Done.
+Completed in 1.275s at Mon Sep 04 2017 10:03:28 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+
+src/js/script.js
+  line 233  col 13  Expected '}' to match '{' from line 230 and instead saw 'click .hero-pause-play'.
+  line 233  col 37  Expected '}' to match '{' from line 204 and instead saw ':'.
+  line 233  col 39  Expected ')' and instead saw 'pausePlay'.
+  line 233  col 50  Missing semicolon.
+  line 235  col 16  Expected ')' and instead saw ':'.
+  line 235  col 17  Missing semicolon.
+  line 235  col 26  Missing name in function declaration.
+  line 237  col 10  Expected an identifier and instead saw ','.
+  line 237  col 10  Expected an assignment or function call and instead saw an expression.
+  line 237  col 11  Missing semicolon.
+  line 238  col 18  Label 'oneBack' on function statement.
+  line 238  col 26  Missing name in function declaration.
+  line 240  col 10  Expected an identifier and instead saw ','.
+  line 240  col 10  Expected an assignment or function call and instead saw an expression.
+  line 240  col 11  Missing semicolon.
+  line 241  col 20  Label 'pausePlay' on function statement.
+  line 241  col 28  Missing name in function declaration.
+  line 244  col 17  Label 'render' on function statement.
+  line 244  col 25  Missing name in function declaration.
+  line 255  col 9   Unrecoverable syntax error. (56% scanned).
+
+  ✖  6 errors
+  ⚠  14 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.045s at Mon Sep 04 2017 10:07:40 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+
+src/js/script.js
+  line 244  col 9   Expected '}' to match '{' from line 204 and instead saw 'render'.
+  line 244  col 15  Expected ')' and instead saw ':'.
+  line 244  col 16  Missing semicolon.
+  line 244  col 25  Missing name in function declaration.
+  line 447  col 42  Unrecoverable syntax error. (99% scanned).
+
+  ✖  3 errors
+  ⚠  2 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.062s at Mon Sep 04 2017 10:08:05 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 13.7 kB → 9.26 kB
+File dist/js/script_photos.min.js created: 11.37 kB → 7.73 kB
+File dist/js/script_resume.min.js created: 4.8 kB → 4.24 kB
+>> 3 files created.
+
+Done.
+Completed in 1.253s at Mon Sep 04 2017 10:08:10 GMT-0500 (CDT) - Waiting...

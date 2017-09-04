@@ -219,85 +219,39 @@ $(function(){
 			});
 			this.slide.append(heroHTML);			
 			$('.hero').append(this.render().el);
-			var iLeft=new heroArrowLeft({model: iHero});
-			var iRight=new heroArrowRight({model: iHero});
-			var iPause=new heroPausePlay({model: iHero});
+			//var iLeft=new heroArrowLeft({model: iHero});
+			//var iRight=new heroArrowRight({model: iHero});
+			//var iPause=new heroPausePlay({model: iHero});
 			//carousel
 			this.model.set("trigger",setInterval(function() {
 				$(".hero-right-arrow").click();
 				}, 8000));
 			},
+		events:{
+			'click .hero-left-arrow': 'oneBack',
+			'click .hero-right-arrow': 'oneNext',
+			'click .hero-pause-play': 'pausePlay'
+		},
+		oneNext: function(){
+			this.model.oneNext();
+		},
+		oneBack: function(){
+			this.model.oneBack();
+		},
+		pausePlay: function(){
+			this.model.pausePlay();
+		},
 		render: function(){
 			// Create the HTML
 			var index=this.model.get("index")+2;
 			var nchildstr='.img-hero:nth-child('+index+')';
 			$('.img-hero').removeClass("unhide");
 			$(nchildstr).addClass("unhide");
-			this.$el.html('<div>'+heroImgs[this.model.get("index")].desc+'</div>');
-			var iLeft=new heroArrowLeft({model: iHero});
-			var iRight=new heroArrowRight({model: iHero});
-			var iPause=new heroPausePlay({model: iHero});
+			var left_arrow_html='<div class="hero-left-arrow"><img src="img/icons/left.png" /></div>';
+			var right_arrow_html='<div class="hero-right-arrow"><img src="img/icons/right.png" /></div>';
+			var play_pause_html='<div class="hero-pause-play">'+this.model.get('icon')+'</div>';
+			this.$el.html('<div>'+heroImgs[this.model.get("index")].desc+left_arrow_html+right_arrow_html+play_pause_html+'</div>');
 			return this;
-		}
-	});
-	//<div class="hero-left-arrow"><img src="img/icons/left.png" /></div>
-	//<div class="hero-right-arrow"><img src="img/icons/right.png" /></div>
-	//<div class="hero-pause-play"><img src="" /></div>
-
-	var heroArrowLeft = Backbone.View.extend({
-		tagName: 'div',
-		className: "hero-left-arrow",
-		initialize: function(){
-			this.div= $('.hero-banner');
-			this.div.append(this.render().el);
-		},
-		events:{
-			'click': 'toggleSlides'
-		},
-		render: function(){
-			this.$el.html('<img src="img/icons/left.png" />');
-			return this;
-		},
-		toggleSlides: function(){
-			this.model.oneBack();
-		}
-	});
-	
-	var heroPausePlay = Backbone.View.extend({
-		tagName: 'div',
-		className: "hero-pause-play",
-		initialize: function(){
-			this.div= $('.hero-banner');
-			this.div.append(this.render().el);
-		},
-		events:{
-			'click': 'toggleSlides'
-		},
-		render: function(){
-			this.$el.html(this.model.get('icon'));
-			return this;
-		},
-		toggleSlides: function(){
-			this.model.pausePlay();
-		}
-	});
-	
-	var heroArrowRight = Backbone.View.extend({
-		tagName: 'div',
-		className: "hero-right-arrow",
-		initialize: function(){
-			this.div= $('.hero-banner');
-			this.div.append(this.render().el);
-		},
-		events:{
-			'click': 'toggleSlides'
-		},
-		render: function(){
-			this.$el.html('<img src="img/icons/right.png" />');
-			return this;
-		},
-		toggleSlides: function(){
-			this.model.oneNext();
 		}
 	});
 	var iHero=new heroSlidesShow();
