@@ -176,12 +176,26 @@ $(function(){
 				var max_t = this.get("max");
 				index_t = ((index_t==max_t-1)?0:index_t+1);
 				this.set("index",index_t);
+				//clear and restart autoplay
+				if (this.get("play")===true){
+					clearInterval(this.get("trigger"));
+					this.set("trigger",setInterval(function() {
+							$(".hero-right-arrow").click();
+					}, 8000));
+				}
 			},
 			oneBack: function(){
 				var index_t = this.get("index");
 				var max_t = this.get("max");
 				index_t = ((index_t===0)?max_t-1:index_t-1);
 				this.set("index",index_t);
+				//clear and restart autoplay
+				if (this.get("play")===true){
+					clearInterval(this.get("trigger"));
+					this.set("trigger",setInterval(function() {
+							$(".hero-right-arrow").click();
+					}, 8000));
+				}
 			},
 			pausePlay: function(){
 				var icon_t = this.get("icon");
