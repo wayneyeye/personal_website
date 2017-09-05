@@ -90,6 +90,13 @@ var heroImgs=[{
 				this.set("index_right",index_t);
 				index_t = ((index_t==max_t-1)?0:index_t+1);
 				this.set("index_far_right",index_t);
+				//clear and restart autoplay
+				if (this.get("play")===true){
+					clearInterval(this.get("trigger"));
+					this.set("trigger",setInterval(function() {
+							$(".hero-right-arrow").click();
+					}, 8000));
+				}
 			},
 			oneBack: function(){
 				var index_t = this.get("index");
@@ -104,6 +111,13 @@ var heroImgs=[{
 				this.set("index_left",index_t);
 				index_t = ((index_t===0)?max_t-1:index_t-1);
 				this.set("index_far_left",index_t);
+				//clear and restart autoplay
+				if (this.get("play")===true){
+					clearInterval(this.get("trigger"));
+					this.set("trigger",setInterval(function() {
+							$(".hero-right-arrow").click();
+					}, 8000));
+				}
 			},
 			pausePlay: function(){
 				var icon_t = this.get("icon");
@@ -149,6 +163,20 @@ var heroSlide = Backbone.View.extend({
 				$(".hero-right-arrow").click();
 			}, 8000));
 		},
+		events:{
+			'click .hero-left-arrow': 'oneBack',
+			'click .hero-right-arrow': 'oneNext',
+			'click .hero-pause-play': 'pausePlay'
+		},
+		oneNext: function(){
+			this.model.oneNext();
+		},
+		oneBack: function(){
+			this.model.oneBack();
+		},
+		pausePlay: function(){
+			this.model.pausePlay();
+		},
 		render: function(){
 			// Create the HTML
 			var index=this.model.get("index")+2;
@@ -171,136 +199,74 @@ var heroSlide = Backbone.View.extend({
 			$(nchildstr_right).addClass("unhide-right");
 			$(nchildstr_far_left).addClass("unhide-far-left");
 			$(nchildstr_far_right).addClass("unhide-far-right");
-			this.$el.html('<div>'+heroImgs[this.model.get("index")].desc+'</div>');
-			var iLeft=new heroArrowLeft({model: iHero});
-			var iRight=new heroArrowRight({model: iHero});
-			var iPause=new heroPausePlay({model: iHero});
+			var left_arrow_html='<div class="hero-left-arrow"><img src="img/icons/left.png" /></div>';
+			var right_arrow_html='<div class="hero-right-arrow"><img src="img/icons/right.png" /></div>';
+			var play_pause_html='<div class="hero-pause-play">'+this.model.get('icon')+'</div>';
+			this.$el.html('<div>'+heroImgs[this.model.get("index")].desc+left_arrow_html+right_arrow_html+play_pause_html+'</div>');
 			return this;
-		}
-	});
-var heroArrowLeft = Backbone.View.extend({
-	tagName: 'div',
-	className: "hero-left-arrow",
-	initialize: function(){
-		this.div= $('.hero-banner');
-		this.div.append(this.render().el);
-	},
-	events:{
-		'click': 'toggleSlides'
-	},
-	render: function(){
-		this.$el.html('<img src="img/icons/left.png" />');
-		return this;
-	},
-	toggleSlides: function(){
-		this.model.oneBack();
-			// reset timer
-			// this.model.pausePlay();
-			// this.model.pausePlay();
-		}
-	});
-
-var heroPausePlay = Backbone.View.extend({
-	tagName: 'div',
-	className: "hero-pause-play",
-	initialize: function(){
-		this.div= $('.hero-banner');
-		this.div.append(this.render().el);
-	},
-	events:{
-		'click': 'toggleSlides'
-	},
-	render: function(){
-		this.$el.html(this.model.get('icon'));
-		return this;
-	},
-	toggleSlides: function(){
-		this.model.pausePlay();
-	}
-});
-
-var heroArrowRight = Backbone.View.extend({
-	tagName: 'div',
-	className: "hero-right-arrow",
-	initialize: function(){
-		this.div= $('.hero-banner');
-		this.div.append(this.render().el);
-	},
-	events:{
-		'click': 'toggleSlides'
-	},
-	render: function(){
-		this.$el.html('<img src="img/icons/right.png" />');
-		return this;
-	},
-	toggleSlides: function(){
-		this.model.oneNext();
-			// reset timer
-			// this.model.pausePlay();
-			// this.model.pausePlay();
 		}
 	});
 var iHero=new heroSlidesShow();
 var iSlide=new heroSlide({model: iHero});
 
 	// Collections for Albums
-	//*************************Featured Projects****************************************
-	var Album_json={cat:{
-		title:'meow',
-		url:"#",
-		img_list:{
-			img:'dist/img/placeholder/placeimg_640_480_animals.jpg',
-			desc:"Our plans include unlimited texting, calling, and data, starting as low as $13.99 per month with no contracts."
-		}
+//*************************Featured Projects****************************************
+var Album_json={cat:{
+	title:'meow',
+	url:"#",
+	img_list:{
+		img:'dist/img/placeholder/placeimg_640_480_animals.jpg',
+		desc:"Our plans include unlimited texting, calling, and data, starting as low as $13.99 per month with no contracts."
+	}
+},
+street:{
+	title:'wonderful!',
+	url:"#",
+	img_list:[{
+		img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
+		desc:"This is a description"
+	}]
+},
+building:{
+	title:'delicate',
+	url:"#",
+	img_list:[{
+		img:'dist/img/placeholder/placeimg_640_480_arch2.jpg',
+		desc:"This is a description"
 	},
-	street:{
-		title:'wonderful!',
-		url:"#",
-		img_list:[{
-			img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
-			desc:"This is a description"
-		}]
+	{
+		img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
+		desc:"This is a description"
 	},
-	building:{
-		title:'delicate',
-		url:"#",
-		img_list:[{
-			img:'dist/img/placeholder/placeimg_640_480_arch2.jpg',
-			desc:"This is a description"
-		},
-		{
-			img:'dist/img/placeholder/placeimg_640_480_arch.jpg',
-			desc:"This is a description"
-		},
-		{
-			img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
-			desc:"This is a description"
-		}]
-	},
-	bird:{
-		title:'pigeons',
-		url:"#",
-		img_list:[{
-			img:'dist/img/placeholder/placeimg_640_480_grayscale_animals.jpg',
-			desc:"This is a description"
-		}]
-	},
-	valley:{
-		title:'splendid',
-		url:"#",
-		img_list:[{
-			img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
-			desc:"This is a description"
-		}]
-	},
-	rainbow:{
-		title:'cool',
-		url:"#",
-		img_list:[{
-			img:'dist/img/placeholder/placeimg_640_480_grayscale_nature.jpg',
-			desc:"This is a description"
-		}]
-	}};
+	{
+		img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
+		desc:"This is a description"
+	}]
+},
+bird:{
+	title:'pigeons',
+	url:"#",
+	img_list:[{
+		img:'dist/img/placeholder/placeimg_640_480_grayscale_animals.jpg',
+		desc:"This is a description"
+	}]
+},
+valley:{
+	title:'splendid',
+	url:"#",
+	img_list:[{
+		img:'dist/img/placeholder/placeimg_640_480_grayscale_any.jpg',
+		desc:"This is a description"
+	}]
+},
+rainbow:{
+	title:'cool',
+	url:"#",
+	img_list:[{
+		img:'dist/img/placeholder/placeimg_640_480_grayscale_nature.jpg',
+		desc:"This is a description"
+	}]
+}};
 	// Collections for Projects
 	var placeholder_img='dist/img/placeholder/placeimg_640_480_arch.jpg';
 	// view foreach album

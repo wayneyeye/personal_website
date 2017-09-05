@@ -398,6 +398,9 @@ body{
 .album-desc a:hover{
 	color:yellow;
 }
+.album-desc a:visited{
+	color:lightgreen;
+}
 
 .album-desc p{
 	margin-left: 10px;
@@ -409,22 +412,31 @@ body{
 
 .album-arrow-left{
 	position: absolute;
-	width:30px;
-	left:0;
-	bottm:0;
+	width:5%;
+	left:1%;
+	bottom:30%;
 }
 
 .album-arrow-right{
 	position: absolute;
-	width:30px;
-	right:0;
-	bottm:0;
+	width:5%;
+	right:1%;
+	bottom:30%;
+}
+
+.album-arrow-left:hover{
+	cursor: pointer;
+}
+
+.album-arrow-right:hover{
+	cursor: pointer;
 }
 
 .album-x-url{
 	color:#c7c7fb;
 	font-size: 0.8em;
 }
+
 
 .album-view:hover .album-desc{
 	opacity: 0.6;
