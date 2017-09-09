@@ -37,46 +37,51 @@ resumeData={
 	"logo":"dist/img/resume_logos/round/PKU_round.png"
 }],
 "Skills":[
+{'name':'Analytics','link':''},
 {'name':'Javascript','link':''},
 {'name':'CSS','link':''},
 {'name':'HTML','link':''},
+{'name':'Bootstrap/Backbone/D3','link':''},
+{'name':'Python','link':''},
+{'name':'NumPy/Pandas','link':''},
 {'name':'Python','link':''},
 {'name':'SQL','link':''},
-{'name':'Excel','link':''},
+{'name':'Excel/VBA','link':''},
 {'name':'Alteryx','link':''},
-{'name':'Analytics','link':''},
+{'name':'Statistical','link':''},
 {'name':'Machine Learning','link':''},
 {'name':'Financial Analytics','link':''},
 {'name':'Supply Chain Management','link':''},
 {'name':'Optimization','link':''},
-{'name':'Linux','link':''},
+{'name':'Linux Shell','link':''},
 {'name':'SAS','link':''},
 {'name':'R','link':''},
+{'name':'Tableau','link':''},
+{'name':'SSRS','link':''},
 ],
 "Professional":[
 {
 	"order":1,
-	"company":'EFGH Solutions',
+	"company":'ATCG Solutions',
 	"subdivision":'',
-	"position":'Data Analyst',
+	"position":'Data Analyst Intern',
 	'location':'Richardson, Texas',
-	"from":'04/2016',
-	"to":'12/2016',
+	"from":'01/2016',
+	"to":'06/2016',
 	"experience":['Migrated multiple legacy databases (Oracle, SQL Server, Access) into redesigned data warehouse using SSIS and validated to ensure integrity',
 	'Wrote complex SQL queries and developed views, stored procedures and user-defined functions over large datasets (~100 GB)',
 	'Improved performance for expensive queries by different techniques, including indexing and caching']
 },
 {
 	"order":2,
-	"company":'ABCD Solutions',
+	"company":'Education First',
 	"subdivision":'',
-	"position":'Data Analyst',
-	'location':'Richardson, Texas',
-	"from":'04/2016',
-	"to":'12/2016',
-	"experience":['Migrated multiple legacy databases (Oracle, SQL Server, Access) into redesigned data warehouse using SSIS and validated to ensure integrity',
-	'Wrote complex SQL queries and developed views, stored procedures and user-defined functions over large datasets (~100 GB)',
-	'Improved performance for expensive queries by different techniques, including indexing and caching']
+	"position":'Marketing Data Analyst Intern',
+	'location':'Shanghai, China',
+	"from":'01/2013',
+	"to":'08/2013',
+	"experience":['Developed multiple business data QA toolbox using Excel targeting database which can handle 100k+ records',
+	'Automated data processing by scripting VBA, which reduced manual work load from 3 hours to 10 minutes']
 },
 {
 	"order":3,
@@ -90,11 +95,16 @@ resumeData={
 }
 ],
 "Project":[{
-	"name":"Simulation Based Optimization",
+	"name":"Simulation Based Optimization 1",
 	"link":"http://www.sciencedirect.com/science/article/pii/S0098135416300060"
-},{
-	"name":"Project 2",
-	"link":""
+},
+{
+	"name":"Simulation Based Optimization 2",
+	"link":"https://www.scholars.northwestern.edu/en/publications/a-fast-simulation-based-optimization-method-for-inventory-control"
+},
+{
+	"name":"Simulation Based Optimization 3",
+	"link":"https://iwe.pure.elsevier.com/en/publications/a-simulation-based-optimization-method-for-solving-the-integrated"
 }],
 };
 $(function(){

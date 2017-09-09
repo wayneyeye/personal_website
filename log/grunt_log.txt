@@ -4363,3 +4363,19 @@ Running "cssmin:build" (cssmin) task
 
 Done.
 Completed in 0.822s at Mon Sep 04 2017 10:15:56 GMT-0500 (CDT) - Waiting...
+Running "watch" task
+Waiting...
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.13 kB → 9.54 kB
+File dist/js/script_photos.min.js created: 10.93 kB → 7.5 kB
+File dist/js/script_resume.min.js created: 5.19 kB → 4.59 kB
+>> 3 files created.
+
+Done.
+Completed in 1.761s at Fri Sep 08 2017 22:46:40 GMT-0500 (CDT) - Waiting...
