@@ -82,16 +82,6 @@ resumeData={
 	"to":'08/2013',
 	"experience":['Developed multiple business data QA toolbox using Excel targeting database which can handle 100k+ records',
 	'Automated data processing by scripting VBA, which reduced manual work load from 3 hours to 10 minutes']
-},
-{
-	"order":3,
-	"company":'ABCD Solutions',
-	"subdivision":'',
-	"position":'Data Analyst',
-	'location':'Richardson, Texas',
-	"from":'04/2016',
-	"to":'12/2016',
-	"experience":[]
 }
 ],
 "Project":[{

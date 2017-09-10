@@ -283,10 +283,25 @@ rainbow:{
 			'click .album-arrow-left': 'oneBack'
 		},
 		render: function(){
+			var left_arrow_html='<div class="album-arrow-left"><img src="img/icons/left.png"/></div>';
+			var right_arrow_html='<div class="album-arrow-right"><img src="img/icons/right.png"/></div>';
+			if (this.model.get('current_index')===0){
+				left_arrow_html='';
+			}
+			else{
+				left_arrow_html='<div class="album-arrow-left"><img src="img/icons/left.png"/></div>';
+			}
+			if (this.model.get('current_index')>=(this.model.get("img_list").length-1)){
+				right_arrow_html='';
+			}
+			else
+			{
+				right_arrow_html='<div class="album-arrow-right"><img src="img/icons/right.png"/></div>';
+			}
 			this.$el.html('<div class="album-img-div"><img src="'+this.model.get('cover_pic')+'"/>'+'<div class="album-desc">'+'<a class="album-title-url" href="'+this.model.get('url')+'">'+
 				this.model.get('title')+'</a><p>move here for more information</p>'+
 				'<span>'+this.model.get('desc')+'</span>'+'<a class="album-x-url" href="'+this.model.get('url')+'">'+
-				'click here for more'+'</a>'+'<div class="album-arrow-left"><img src="img/icons/left.png"/></div>'+'<div class="album-arrow-right"><img src="img/icons/right.png"/></div>'+'</div></div>');
+				'click here for more'+'</a>'+left_arrow_html+right_arrow_html+'</div></div>');
 			return this;
 		},
 		oneNext: function(){
@@ -315,8 +330,9 @@ rainbow:{
 	  oneNext: function(){
 	  	var current_index_t=this.get("current_index");
 	  	this.set("current_index",1+current_index_t);
-	  	if (this.get("current_index")>=this.get("img_list").length){
-	  		this.set("current_index",0);
+	  	var album_length=this.get("img_list").length;
+	  	if (this.get("current_index")>=album_length){
+	  		this.set("current_index",album_length-1);
 	  	}
 	  	img_t=this.get("img_list")[this.get("current_index")];
 	  	this.set("cover_pic",img_t.img);
@@ -327,7 +343,7 @@ rainbow:{
 	  	var current_index_t=this.get("current_index");
 	  	this.set("current_index",current_index_t-1);
 	  	if (this.get("current_index")<0){
-	  		this.set("current_index",(this.get("img_list").length-1));
+	  		this.set("current_index",0);
 	  	}
 	  	img_t=this.get("img_list")[this.get("current_index")];
 	  	this.set("cover_pic",img_t.img);
