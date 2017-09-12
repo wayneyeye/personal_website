@@ -4540,3 +4540,9 @@ Running "cssmin:build" (cssmin) task
 
 Done.
 Completed in 0.823s at Sun Sep 10 2017 11:01:00 GMT-0500 (CDT) - Waiting...
+./start_pythonServer: line 3: grunt: command not found
+/usr/bin/env: ‘node’: No such file or directory
+/usr/bin/env: ‘node’: No such file or directory
+/usr/bin/env: ‘node’: No such file or directory
+Running "watch" task
+Waiting...
