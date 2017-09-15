@@ -4546,3 +4546,451 @@ Completed in 0.823s at Sun Sep 10 2017 11:01:00 GMT-0500 (CDT) - Waiting...
 /usr/bin/env: ‘node’: No such file or directory
 Running "watch" task
 Waiting...
+Running "watch" task
+Waiting...
+Running "watch" task
+Waiting...
+>> File "src/js/script_resume.js" changed.
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+
+✔ No problems
+
+File dist/js/script.min.js created: 14.13 kB → 9.54 kB
+
+Running "uglify:build" (uglify) task
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5 kB → 4.44 kB
+>> 3 files created.
+
+Done.
+Completed in 2.173s at Thu Sep 14 2017 21:14:39 GMT-0500 (CDT) - Waiting...
+File dist/js/script.min.js created: 14.13 kB → 9.54 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5 kB → 4.44 kB
+>> 3 files created.
+
+Done.
+Completed in 2.255s at Thu Sep 14 2017 21:14:39 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.13 kB → 9.54 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5 kB → 4.44 kB
+>> 3 files created.
+
+Done.
+Completed in 1.332s at Thu Sep 14 2017 21:22:00 GMT-0500 (CDT) - Waiting...
+File dist/js/script.min.js created: 14.13 kB → 9.54 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5 kB → 4.44 kB
+>> 3 files created.
+
+Done.
+Completed in 1.395s at Thu Sep 14 2017 21:22:00 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.96 kB → 5.76 kB
+
+Done.
+Completed in 0.819s at Thu Sep 14 2017 21:23:25 GMT-0500 (CDT) - Waiting...
+>> 1 file created. 6.96 kB → 5.76 kB
+
+Done.
+Completed in 0.824s at Thu Sep 14 2017 21:23:25 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.96 kB → 5.76 kB
+
+Done.
+Completed in 0.805s at Thu Sep 14 2017 21:23:54 GMT-0500 (CDT) - Waiting...
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.96 kB → 5.76 kB
+
+Done.
+Completed in 0.816s at Thu Sep 14 2017 21:23:54 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.96 kB → 5.76 kB
+
+Done.
+Completed in 0.834s at Thu Sep 14 2017 21:24:04 GMT-0500 (CDT) - Waiting...
+>> 1 file created. 6.96 kB → 5.76 kB
+
+Done.
+Completed in 0.821s at Thu Sep 14 2017 21:24:04 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.96 kB → 5.76 kB
+
+Done.
+Completed in 0.819s at Thu Sep 14 2017 21:24:18 GMT-0500 (CDT) - Waiting...
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.96 kB → 5.76 kB
+
+Done.
+Completed in 0.826s at Thu Sep 14 2017 21:24:18 GMT-0500 (CDT) - Waiting...
+>> File "src/css/style.css" changed.
+>> File "src/css/style.css" changed.
+Running "cssmin:build" (cssmin) task
+Running "cssmin:build" (cssmin) task
+>> 1 file created. 6.96 kB → 5.76 kB
+>> 1 file created. 6.96 kB → 5.76 kB
+
+Done.
+
+Done.
+Completed in 0.803s at Thu Sep 14 2017 21:26:01 GMT-0500 (CDT) - Waiting...
+Completed in 0.824s at Thu Sep 14 2017 21:26:01 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.13 kB → 9.54 kB
+File dist/js/script.min.js created: 14.13 kB → 9.54 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5 kB → 4.44 kB
+>> 3 files created.
+
+Done.
+Completed in 1.241s at Thu Sep 14 2017 21:26:06 GMT-0500 (CDT) - Waiting...
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5 kB → 4.44 kB
+>> 3 files created.
+
+Done.
+Completed in 1.263s at Thu Sep 14 2017 21:26:06 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+src/js/script.js
+  line 17  col 106  Empty array elements require elision=true.
+
+  ⚠  1 warning
+
+
+src/js/script.js
+  line 17  col 106  Empty array elements require elision=true.
+
+  ⚠  1 warning
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.040s at Thu Sep 14 2017 21:28:09 GMT-0500 (CDT) - Waiting...
+Completed in 1.062s at Thu Sep 14 2017 21:28:09 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5 kB → 4.44 kB
+>> 3 files created.
+
+Done.
+Completed in 1.236s at Thu Sep 14 2017 21:28:55 GMT-0500 (CDT) - Waiting...
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5 kB → 4.44 kB
+>> 3 files created.
+
+Done.
+Completed in 1.298s at Thu Sep 14 2017 21:28:55 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+src/js/script_resume.js
+  line 92  col 5   Expected '}' to match '{' from line 88 and instead saw 'logo'.
+  line 92  col 11  Expected ']' to match '[' from line 87 and instead saw ':'.
+  line 92  col 12  Expected '}' to match '{' from line 1 and instead saw '#'.
+  line 92  col 15  Missing semicolon.
+  line 92  col 12  Unrecoverable syntax error. (55% scanned).
+
+  ✖  4 errors
+  ⚠  1 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.043s at Thu Sep 14 2017 21:32:15 GMT-0500 (CDT) - Waiting...
+
+src/js/script_resume.js
+  line 92  col 5   Expected '}' to match '{' from line 88 and instead saw 'logo'.
+  line 92  col 11  Expected ']' to match '[' from line 87 and instead saw ':'.
+  line 92  col 12  Expected '}' to match '{' from line 1 and instead saw '#'.
+  line 92  col 15  Missing semicolon.
+  line 92  col 12  Unrecoverable syntax error. (55% scanned).
+
+  ✖  4 errors
+  ⚠  1 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.065s at Thu Sep 14 2017 21:32:15 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+src/js/script_resume.js
+  line 92  col 5   Expected '}' to match '{' from line 88 and instead saw 'logo'.
+  line 92  col 11  Expected ']' to match '[' from line 87 and instead saw ':'.
+  line 92  col 12  Expected '}' to match '{' from line 1 and instead saw '#'.
+  line 92  col 15  Missing semicolon.
+  line 92  col 12  Unrecoverable syntax error. (53% scanned).
+
+  ✖  4 errors
+  ⚠  1 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.026s at Thu Sep 14 2017 21:35:23 GMT-0500 (CDT) - Waiting...
+
+src/js/script_resume.js
+  line 92  col 5   Expected '}' to match '{' from line 88 and instead saw 'logo'.
+  line 92  col 11  Expected ']' to match '[' from line 87 and instead saw ':'.
+  line 92  col 12  Expected '}' to match '{' from line 1 and instead saw '#'.
+  line 92  col 15  Missing semicolon.
+  line 92  col 12  Unrecoverable syntax error. (53% scanned).
+
+  ✖  4 errors
+  ⚠  1 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.079s at Thu Sep 14 2017 21:35:23 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+src/js/script_resume.js
+  line 92  col 5   Expected '}' to match '{' from line 88 and instead saw 'logo'.
+  line 92  col 11  Expected ']' to match '[' from line 87 and instead saw ':'.
+  line 92  col 12  Expected '}' to match '{' from line 1 and instead saw '#'.
+  line 92  col 15  Missing semicolon.
+  line 92  col 12  Unrecoverable syntax error. (53% scanned).
+
+  ✖  4 errors
+  ⚠  1 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.054s at Thu Sep 14 2017 21:35:29 GMT-0500 (CDT) - Waiting...
+
+src/js/script_resume.js
+  line 92  col 5   Expected '}' to match '{' from line 88 and instead saw 'logo'.
+  line 92  col 11  Expected ']' to match '[' from line 87 and instead saw ':'.
+  line 92  col 12  Expected '}' to match '{' from line 1 and instead saw '#'.
+  line 92  col 15  Missing semicolon.
+  line 92  col 12  Unrecoverable syntax error. (53% scanned).
+
+  ✖  4 errors
+  ⚠  1 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.087s at Thu Sep 14 2017 21:35:29 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+src/js/script_resume.js
+  line 92  col 5   Expected '}' to match '{' from line 88 and instead saw 'logo'.
+  line 92  col 11  Expected ']' to match '[' from line 87 and instead saw ':'.
+  line 92  col 12  Expected '}' to match '{' from line 1 and instead saw '#'.
+  line 92  col 15  Missing semicolon.
+  line 92  col 12  Unrecoverable syntax error. (53% scanned).
+
+  ✖  4 errors
+  ⚠  1 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.039s at Thu Sep 14 2017 21:35:52 GMT-0500 (CDT) - Waiting...
+
+src/js/script_resume.js
+  line 92  col 5   Expected '}' to match '{' from line 88 and instead saw 'logo'.
+  line 92  col 11  Expected ']' to match '[' from line 87 and instead saw ':'.
+  line 92  col 12  Expected '}' to match '{' from line 1 and instead saw '#'.
+  line 92  col 15  Missing semicolon.
+  line 92  col 12  Unrecoverable syntax error. (53% scanned).
+
+  ✖  4 errors
+  ⚠  1 warnings
+
+Warning: Task "jshint:build" failed. Use --force to continue.
+
+Aborted due to warnings.
+Completed in 1.045s at Thu Sep 14 2017 21:35:53 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.274s at Thu Sep 14 2017 21:37:07 GMT-0500 (CDT) - Waiting...
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.277s at Thu Sep 14 2017 21:37:07 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.236s at Thu Sep 14 2017 21:39:19 GMT-0500 (CDT) - Waiting...
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.283s at Thu Sep 14 2017 21:39:19 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.267s at Thu Sep 14 2017 21:39:34 GMT-0500 (CDT) - Waiting...
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.285s at Thu Sep 14 2017 21:39:34 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script_resume.js" changed.
+>> File "src/js/script_resume.js" changed.
+Running "jshint:build" (jshint) task
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+File dist/js/script.min.js created: 14.29 kB → 9.68 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.270s at Thu Sep 14 2017 21:40:36 GMT-0500 (CDT) - Waiting...
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.264s at Thu Sep 14 2017 21:40:36 GMT-0500 (CDT) - Waiting...

@@ -1,7 +1,7 @@
 resumeData={
 "FirstName":'Wenhe',
 "LastName":'Ye',
-"ProfilePicture":'img/photo-placeholder.jpg',	
+"ProfilePicture":'img/photo-resume.jpg',	
 "DesiredPosition":['Data Analyst','Business Analyst'],
 "Education":[{
 	"order":1,
@@ -84,6 +84,20 @@ resumeData={
 	'Automated data processing by scripting VBA, which reduced manual work load from 3 hours to 10 minutes']
 }
 ],
+"Certifications":[
+{
+	"order":1,
+	"name":"Oracle Certified SQL Expert",
+	"url":"#",
+	"logo":"#"
+},
+{
+	"order":2,
+	"name":"Certified SAS Programmer",
+	"url":"#",
+	"logo":"#"
+}
+],
 "Project":[{
 	"name":"Simulation Based Optimization 1",
 	"link":"http://www.sciencedirect.com/science/article/pii/S0098135416300060"
@@ -140,6 +154,12 @@ resumeData.Professional.forEach(function(item)
 	});
 
 });
+
+resumeData.Certifications.forEach(function(item)
+{
+	$('.certifications').append('<div class="col-md-12"><a href="'+item.url+'">'+item.name+'</h6></div>');
+});
+
 
 resumeData.Project.forEach(function(item)
 {
