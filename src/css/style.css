@@ -379,7 +379,7 @@ body{
 .album-desc{
 	position: absolute;
 	width:100%;
-	bottom: -20%;
+	bottom: calc(-35% + 55px);
 	background-color: black;
 	opacity: 0.0;
 	height: 35%;
@@ -391,7 +391,7 @@ body{
 	opacity: 1;
 	white-space: nowrap;
 	display: inline-block;
-	font-size: 1.5em;
+	font-size: 24px;
 	color: yellow;
 }
 
@@ -414,14 +414,14 @@ body{
 	position: absolute;
 	width:5%;
 	left:1%;
-	bottom:30%;
+	bottom:10%;
 }
 
 .album-arrow-right{
 	position: absolute;
 	width:5%;
 	right:1%;
-	bottom:30%;
+	bottom:10%;
 }
 
 .album-arrow-left:hover{
@@ -435,6 +435,9 @@ body{
 .album-x-url{
 	color:#c7c7fb;
 	font-size: 0.8em;
+	/*position: absolute;*/
+	bottom: 0;
+	margin: auto;
 }
 
 
