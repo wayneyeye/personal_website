@@ -306,6 +306,12 @@ $(function(){
 	title:'cool',
 	url:"#",
 	desc:"This is a description"
+	},
+	supply_chain:{
+	img:'dist/img/project/supply_chain.jpg',
+	title:'Simulation based Optimization',
+	url:"http://www.sciencedirect.com/science/article/pii/S0098135416300060",
+	desc:"An operations research project with Dow Chemical. The proposed framework is able to solve general supply chain problems with the multi-sourcing capability, asynchronous ordering, uncertain demand and stochastic lead time."
 	}};
 	// Collections for Projects
 	var placeholder_img='dist/img/placeholder/placeimg_640_480_arch.jpg';
@@ -346,7 +352,7 @@ $(function(){
 	  model: Album_Model
 	});
 
-	var Album_names=['cat','bird','valley','building'];
+	var Album_names=['supply_chain','bird','valley','building'];
 	var Album_list=[];
 	var myAlbum = new Album_Collection();
 	Album_names.forEach(function(item){

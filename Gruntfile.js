@@ -94,6 +94,31 @@ module.exports = function(grunt) {
           dest: 'dist/img/placeholder'
         }]
       },
+      project: {
+        options: {
+          engine: 'gm',
+          sizes: [{
+            /* Change these */
+            width: 480,
+            height: 320,
+            rename:false,
+            aspectRatio:false,
+            suffix: '',
+            quality: 80
+          }]
+        },
+        /*
+        You don't need to change this part if you don't change
+        the directory structure.
+        */
+        files: [{
+          expand: true,
+          aspectRatio:false,
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'img/project',
+          dest: 'dist/img/project'
+        }]
+      },
     school_logo_round: {
         options: {
           engine: 'gm',
@@ -152,6 +177,9 @@ module.exports = function(grunt) {
       placeholder: {
         src: ['dist/img/placeholder'],
       },
+      project: {
+        src: ['dist/img/project'],
+      },
       school_logo_round: {
         src: ['dist/img/resume_logos/round'],
       },
@@ -170,6 +198,11 @@ module.exports = function(grunt) {
       placeholder: {
         options: {
           create: ['dist/img/placeholder']
+        },
+      },
+      project: {
+        options: {
+          create: ['dist/img/project']
         },
       },
       school_logo_round: {
