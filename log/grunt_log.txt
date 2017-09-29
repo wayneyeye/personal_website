@@ -5752,3 +5752,31 @@ File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
 
 Done.
 Completed in 1.257s at Thu Sep 28 2017 23:29:41 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 15.3 kB → 10.57 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.235s at Thu Sep 28 2017 23:35:48 GMT-0500 (CDT) - Waiting...
+>> File "src/js/script.js" changed.
+Running "jshint:build" (jshint) task
+
+✔ No problems
+
+
+Running "uglify:build" (uglify) task
+File dist/js/script.min.js created: 15.3 kB → 10.57 kB
+File dist/js/script_photos.min.js created: 11.44 kB → 7.76 kB
+File dist/js/script_resume.min.js created: 5.34 kB → 4.72 kB
+>> 3 files created.
+
+Done.
+Completed in 1.240s at Thu Sep 28 2017 23:36:56 GMT-0500 (CDT) - Waiting...

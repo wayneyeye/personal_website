@@ -312,6 +312,12 @@ $(function(){
 	title:'Simulation based Optimization',
 	url:"http://www.sciencedirect.com/science/article/pii/S0098135416300060",
 	desc:"An operations research project with Dow Chemical. The proposed framework is able to solve general supply chain problems with the multi-sourcing capability, asynchronous ordering, uncertain demand and stochastic lead time."
+	},
+	hertz:{
+	img:'dist/img/project/hertz_cover.jpg',
+	title:'Marketing Predictive for Hertz Dataset',
+	url:"#",
+	desc:"to be updated..."
 	}};
 	// Collections for Projects
 	var placeholder_img='dist/img/placeholder/placeimg_640_480_arch.jpg';
@@ -352,7 +358,7 @@ $(function(){
 	  model: Album_Model
 	});
 
-	var Album_names=['supply_chain','bird','valley','building'];
+	var Album_names=['supply_chain','hertz','valley','building'];
 	var Album_list=[];
 	var myAlbum = new Album_Collection();
 	Album_names.forEach(function(item){
