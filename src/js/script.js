@@ -366,8 +366,19 @@ $(function(){
 	// JSON for saving external links
 	var usefulLinks=[
 		{
-			listname: "Most Visited Portals as a Developer",
-			urlist:[{
+			listname: "Developer's Websites",
+			urlist:[
+				{
+				url:"https://docs.python.org/3/",
+				name:"Python3 Documentation",
+				desc:"link to Python3"
+				},
+				{
+				url:"http://www.cplusplus.com/",
+				name:"C++ Documentation",
+				desc:"link to C++"
+				},
+				{
 				url:"https://www.w3schools.com/",
 				name:"W3schools",
 				desc:"link to W3"
@@ -392,9 +403,19 @@ $(function(){
 				desc:"link to Kaggle"
 				},
 				{
+				url:"https://archive.ics.uci.edu/ml/datasets.html",
+				name:"UCI Machine Learning Repository",
+				desc:"link to UCI ML Data"
+				},
+				{
 				url:"https://www.data.gov/",
 				name:"U.S. Government Data",
 				desc:"link to data.gov"
+				},
+				{
+				url:"https://finance.yahoo.com/",
+				name:"Yahoo Finance",
+				desc:"link to Yahoo Finance"
 				},
 				{
 				url:"http://www.google.com/trends/explore",
@@ -405,7 +426,8 @@ $(function(){
 		},
 		{
 			listname: "Logistics for My Perosnal Site",
-			urlist:[{
+			urlist:[
+				{
 				url:"http://backbonejs.org/",
 				name:"Backbonejs",
 				desc:"link to nav1"
